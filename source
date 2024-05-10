@@ -2257,7 +2257,7 @@ Universal.GradColor_49.Parent = Universal.beta
 
 -- Scripts:
 
-local function GRHSLDH_fake_script() -- Universal.Frame.LocalScript 
+local function LPTRZTR_fake_script() -- Universal.Frame.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Frame)
 
 	
@@ -2435,8 +2435,8 @@ local function GRHSLDH_fake_script() -- Universal.Frame.LocalScript
 	script.Parent:Destroy()
 	
 end
-coroutine.wrap(GRHSLDH_fake_script)()
-local function QBQFZ_fake_script() -- Universal.OpenClose.LocalScript 
+coroutine.wrap(LPTRZTR_fake_script)()
+local function FGJH_fake_script() -- Universal.OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', Universal.OpenClose)
 
 	local ui = game:GetService("UserInputService")
@@ -2621,8 +2621,8 @@ local function QBQFZ_fake_script() -- Universal.OpenClose.LocalScript
 		canClick = true
 	end)
 end
-coroutine.wrap(QBQFZ_fake_script)()
-local function WMULARJ_fake_script() -- Universal.OpenClose.Blur 
+coroutine.wrap(FGJH_fake_script)()
+local function QTPGRJ_fake_script() -- Universal.OpenClose.Blur 
 	local script = Instance.new('Script', Universal.OpenClose)
 
 	local Workspace = game:GetService("Workspace")
@@ -2683,8 +2683,8 @@ local function WMULARJ_fake_script() -- Universal.OpenClose.Blur
 	SetUpEffect()
 	RunService.RenderStepped:Connect(functionToBind)
 end
-coroutine.wrap(WMULARJ_fake_script)()
-local function BWJPDQ_fake_script() -- Universal.TextButton.esp 
+coroutine.wrap(QTPGRJ_fake_script)()
+local function EYZRNXV_fake_script() -- Universal.TextButton.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton)
 
 	local PLAYER = game.Players.LocalPlayer
@@ -3120,8 +3120,8 @@ local function BWJPDQ_fake_script() -- Universal.TextButton.esp
 		end
 	end)
 end
-coroutine.wrap(BWJPDQ_fake_script)()
-local function JZUAQXZ_fake_script() -- Universal.TextButton.LocalScript 
+coroutine.wrap(EYZRNXV_fake_script)()
+local function DWLKCLE_fake_script() -- Universal.TextButton.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton)
 
 	local TweenService = game:GetService("TweenService")
@@ -3169,8 +3169,8 @@ local function JZUAQXZ_fake_script() -- Universal.TextButton.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(JZUAQXZ_fake_script)()
-local function QINLMF_fake_script() -- Universal.TextButton_2.LocalScript 
+coroutine.wrap(DWLKCLE_fake_script)()
+local function YNCARF_fake_script() -- Universal.TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_2)
 
 	local TweenService = game:GetService("TweenService")
@@ -3218,8 +3218,8 @@ local function QINLMF_fake_script() -- Universal.TextButton_2.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(QINLMF_fake_script)()
-local function GFAFQIO_fake_script() -- Universal.TextButton_3.LocalScript 
+coroutine.wrap(YNCARF_fake_script)()
+local function TCVWUFO_fake_script() -- Universal.TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_3)
 
 	local TweenService = game:GetService("TweenService")
@@ -3267,8 +3267,8 @@ local function GFAFQIO_fake_script() -- Universal.TextButton_3.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(GFAFQIO_fake_script)()
-local function CESTR_fake_script() -- Universal.TextButton_4.LocalScript 
+coroutine.wrap(TCVWUFO_fake_script)()
+local function AMFJOK_fake_script() -- Universal.TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_4)
 
 	local TweenService = game:GetService("TweenService")
@@ -3316,8 +3316,8 @@ local function CESTR_fake_script() -- Universal.TextButton_4.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(CESTR_fake_script)()
-local function ACFA_fake_script() -- Universal.TextButton_5.LocalScript 
+coroutine.wrap(AMFJOK_fake_script)()
+local function SQNHJKJ_fake_script() -- Universal.TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_5)
 
 	local TweenService = game:GetService("TweenService")
@@ -3365,8 +3365,8 @@ local function ACFA_fake_script() -- Universal.TextButton_5.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(ACFA_fake_script)()
-local function WZRYLF_fake_script() -- Universal.TextButton_6.LocalScript 
+coroutine.wrap(SQNHJKJ_fake_script)()
+local function KVGIUU_fake_script() -- Universal.TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_6)
 
 	local TweenService = game:GetService("TweenService")
@@ -3414,8 +3414,8 @@ local function WZRYLF_fake_script() -- Universal.TextButton_6.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(WZRYLF_fake_script)()
-local function YPTAHZL_fake_script() -- Universal.TextButton_7.esp 
+coroutine.wrap(KVGIUU_fake_script)()
+local function NNGDTUM_fake_script() -- Universal.TextButton_7.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_7)
 
 	local PLAYER = game.Players.LocalPlayer
@@ -3765,8 +3765,8 @@ local function YPTAHZL_fake_script() -- Universal.TextButton_7.esp
 		end
 	end)
 end
-coroutine.wrap(YPTAHZL_fake_script)()
-local function EOOOO_fake_script() -- Universal.TextButton_7.LocalScript 
+coroutine.wrap(NNGDTUM_fake_script)()
+local function QMNRJ_fake_script() -- Universal.TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_7)
 
 	local TweenService = game:GetService("TweenService")
@@ -3814,8 +3814,8 @@ local function EOOOO_fake_script() -- Universal.TextButton_7.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(EOOOO_fake_script)()
-local function YHPGTHK_fake_script() -- Universal.TextButton_8.LocalScript 
+coroutine.wrap(QMNRJ_fake_script)()
+local function SWVIZ_fake_script() -- Universal.TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_8)
 
 	local TweenService = game:GetService("TweenService")
@@ -3863,8 +3863,8 @@ local function YHPGTHK_fake_script() -- Universal.TextButton_8.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(YHPGTHK_fake_script)()
-local function VJEHEDV_fake_script() -- Universal.TextButton_9.LocalScript 
+coroutine.wrap(SWVIZ_fake_script)()
+local function TMDRZ_fake_script() -- Universal.TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_9)
 
 	local TweenService = game:GetService("TweenService")
@@ -3912,22 +3912,28 @@ local function VJEHEDV_fake_script() -- Universal.TextButton_9.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(VJEHEDV_fake_script)()
-local function HWUNY_fake_script() -- Universal.TextButton_10.esp 
+coroutine.wrap(TMDRZ_fake_script)()
+local function SEFOBT_fake_script() -- Universal.TextButton_10.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_10)
 
 	local toggle = true
-	local size = 90
+	local size = 15
 	local plr = game.Players.LocalPlayer
 	script.Parent.MouseButton1Down:Connect(function()
 		if toggle then
 			toggle = false
 			for _, v in pairs(game.Players:GetPlayers()) do
-				if v ~= plr then
+				if v == plr then
 				
-				v.Character.Head.Size = Vector3.new(size,size,size)
-				v.Character.Head.Massless = true
-				v.Character.Head.Transparency  = 0.85
+				for _, char in pairs(v.Character:GetChildren()) do
+					if char.ClassName == "Part" or char.ClassName == "MeshPart" then
+							char.Size = Vector3.new(size,size,size)
+							char.Massless = true
+							char.Transparency = 0.85
+							char.CanCollide = false
+					end
+					
+				end
 				end
 				
 				
@@ -3937,8 +3943,8 @@ local function HWUNY_fake_script() -- Universal.TextButton_10.esp
 		end
 	end)
 end
-coroutine.wrap(HWUNY_fake_script)()
-local function DVAK_fake_script() -- Universal.TextButton_10.LocalScript 
+coroutine.wrap(SEFOBT_fake_script)()
+local function JWEBTFM_fake_script() -- Universal.TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_10)
 
 	local TweenService = game:GetService("TweenService")
@@ -3986,8 +3992,8 @@ local function DVAK_fake_script() -- Universal.TextButton_10.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(DVAK_fake_script)()
-local function TEVLDV_fake_script() -- Universal.TextButton_11.LocalScript 
+coroutine.wrap(JWEBTFM_fake_script)()
+local function DZZQLRH_fake_script() -- Universal.TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_11)
 
 	local TweenService = game:GetService("TweenService")
@@ -4035,8 +4041,8 @@ local function TEVLDV_fake_script() -- Universal.TextButton_11.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(TEVLDV_fake_script)()
-local function BLDUCS_fake_script() -- Universal.TextButton_11.esp 
+coroutine.wrap(DZZQLRH_fake_script)()
+local function EGBS_fake_script() -- Universal.TextButton_11.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_11)
 
 	local on = true
@@ -4063,8 +4069,8 @@ local function BLDUCS_fake_script() -- Universal.TextButton_11.esp
 		wait()
 	end)
 end
-coroutine.wrap(BLDUCS_fake_script)()
-local function MMWNOOX_fake_script() -- Universal.TextButton_12.esp 
+coroutine.wrap(EGBS_fake_script)()
+local function SVSI_fake_script() -- Universal.TextButton_12.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_12)
 
 	local UIS = game:GetService("UserInputService")
@@ -4134,8 +4140,8 @@ local function MMWNOOX_fake_script() -- Universal.TextButton_12.esp
 		wait()
 	end)
 end
-coroutine.wrap(MMWNOOX_fake_script)()
-local function GJWKJP_fake_script() -- Universal.TextButton_12.LocalScript 
+coroutine.wrap(SVSI_fake_script)()
+local function UDKN_fake_script() -- Universal.TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_12)
 
 	local TweenService = game:GetService("TweenService")
@@ -4183,8 +4189,8 @@ local function GJWKJP_fake_script() -- Universal.TextButton_12.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(GJWKJP_fake_script)()
-local function KPBHQ_fake_script() -- Universal.TextButton_13.esp 
+coroutine.wrap(UDKN_fake_script)()
+local function RLXLF_fake_script() -- Universal.TextButton_13.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_13)
 
 	local isJumping = false  -- Boolean to track whether the player is jumping
@@ -4252,8 +4258,8 @@ local function KPBHQ_fake_script() -- Universal.TextButton_13.esp
 		end
 	end)
 end
-coroutine.wrap(KPBHQ_fake_script)()
-local function HUILD_fake_script() -- Universal.TextButton_13.LocalScript 
+coroutine.wrap(RLXLF_fake_script)()
+local function SRGTSYU_fake_script() -- Universal.TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_13)
 
 	local TweenService = game:GetService("TweenService")
@@ -4301,8 +4307,8 @@ local function HUILD_fake_script() -- Universal.TextButton_13.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(HUILD_fake_script)()
-local function ZMJMXMT_fake_script() -- Universal.TextLabel_2.LocalScript 
+coroutine.wrap(SRGTSYU_fake_script)()
+local function CDQW_fake_script() -- Universal.TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextLabel_2)
 
 	while true do
@@ -4310,8 +4316,8 @@ local function ZMJMXMT_fake_script() -- Universal.TextLabel_2.LocalScript
 		script.Parent.Text = game.Players.LocalPlayer.Name
 	end
 end
-coroutine.wrap(ZMJMXMT_fake_script)()
-local function BRDVKX_fake_script() -- Universal.TextLabel_3.LocalScript 
+coroutine.wrap(CDQW_fake_script)()
+local function WSPRTZI_fake_script() -- Universal.TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextLabel_3)
 
 	while true do
@@ -4319,8 +4325,8 @@ local function BRDVKX_fake_script() -- Universal.TextLabel_3.LocalScript
 		script.Parent.Text = game.Name
 	end
 end
-coroutine.wrap(BRDVKX_fake_script)()
-local function OHLYYM_fake_script() -- Universal.TextButton_14.LocalScript 
+coroutine.wrap(WSPRTZI_fake_script)()
+local function KPJPRMA_fake_script() -- Universal.TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_14)
 
 	local TweenService = game:GetService("TweenService")
@@ -4368,16 +4374,16 @@ local function OHLYYM_fake_script() -- Universal.TextButton_14.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(OHLYYM_fake_script)()
-local function WQBKF_fake_script() -- Universal.TextButton_14.LocalScript 
+coroutine.wrap(KPJPRMA_fake_script)()
+local function YWVOE_fake_script() -- Universal.TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_14)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(WQBKF_fake_script)()
-local function AYCYHD_fake_script() -- Universal.Time.LocalScript 
+coroutine.wrap(YWVOE_fake_script)()
+local function LNWCG_fake_script() -- Universal.Time.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Time)
 
 	while true do
@@ -4392,8 +4398,8 @@ local function AYCYHD_fake_script() -- Universal.Time.LocalScript
 		task.wait(1)
 	end
 end
-coroutine.wrap(AYCYHD_fake_script)()
-local function ZHPFRP_fake_script() -- Universal.Frame_29.LocalScript 
+coroutine.wrap(LNWCG_fake_script)()
+local function CSWXRL_fake_script() -- Universal.Frame_29.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Frame_29)
 
 	local Options = script.Parent
@@ -4419,4 +4425,4 @@ local function ZHPFRP_fake_script() -- Universal.Frame_29.LocalScript
 	
 	
 end
-coroutine.wrap(ZHPFRP_fake_script)()
+coroutine.wrap(CSWXRL_fake_script)()
