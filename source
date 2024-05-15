@@ -246,61 +246,72 @@ local Universal = {
 	Subtitle_19 = Instance.new("TextLabel"),
 	GradColor_42 = Instance.new("UIGradient"),
 	UICorner_59 = Instance.new("UICorner"),
-	Background = Instance.new("Frame"),
+	toggle = Instance.new("Frame"),
+	Title_20 = Instance.new("TextLabel"),
 	UICorner_60 = Instance.new("UICorner"),
+	GradColor_43 = Instance.new("UIGradient"),
+	Frame_28 = Instance.new("Frame"),
+	UIListLayout_20 = Instance.new("UIListLayout"),
+	TextButton_15 = Instance.new("TextButton"),
+	UICorner_61 = Instance.new("UICorner"),
+	Subtitle_20 = Instance.new("TextLabel"),
+	GradColor_44 = Instance.new("UIGradient"),
+	UICorner_62 = Instance.new("UICorner"),
+	Background = Instance.new("Frame"),
+	UICorner_63 = Instance.new("UICorner"),
 	UIGradient_5 = Instance.new("UIGradient"),
 	UIGradient_6 = Instance.new("UIGradient"),
 	Shadow_3 = Instance.new("ImageLabel"),
 	UIGradient_7 = Instance.new("UIGradient"),
-	Frame_28 = Instance.new("Frame"),
-	UICorner_61 = Instance.new("UICorner"),
-	Title_20 = Instance.new("TextLabel"),
-	GradColor_43 = Instance.new("UIGradient"),
-	Time = Instance.new("TextLabel"),
-	GradColor_44 = Instance.new("UIGradient"),
 	Frame_29 = Instance.new("Frame"),
-	UICorner_62 = Instance.new("UICorner"),
-	Select = Instance.new("Folder"),
-	Frame_30 = Instance.new("Frame"),
-	UIListLayout_20 = Instance.new("UIListLayout"),
-	cheat = Instance.new("Frame"),
-	UIListLayout_21 = Instance.new("UIListLayout"),
-	Settings = Instance.new("Frame"),
-	UICorner_63 = Instance.new("UICorner"),
-	TextButton_15 = Instance.new("TextButton"),
+	UICorner_64 = Instance.new("UICorner"),
+	Title_21 = Instance.new("TextLabel"),
 	GradColor_45 = Instance.new("UIGradient"),
+	Time = Instance.new("TextLabel"),
+	GradColor_46 = Instance.new("UIGradient"),
+	Frame_30 = Instance.new("Frame"),
+	UICorner_65 = Instance.new("UICorner"),
+	Select = Instance.new("Folder"),
+	Frame_31 = Instance.new("Frame"),
+	UIListLayout_21 = Instance.new("UIListLayout"),
+	cheat = Instance.new("Frame"),
+	UIListLayout_22 = Instance.new("UIListLayout"),
+	Settings = Instance.new("Frame"),
+	UICorner_66 = Instance.new("UICorner"),
+	TextButton_16 = Instance.new("TextButton"),
+	GradColor_47 = Instance.new("UIGradient"),
 	Color = Instance.new("UIGradient"),
 	speed = Instance.new("Frame"),
-	UIListLayout_22 = Instance.new("UIListLayout"),
+	UIListLayout_23 = Instance.new("UIListLayout"),
 	Settings_2 = Instance.new("Frame"),
-	UICorner_64 = Instance.new("UICorner"),
-	TextButton_16 = Instance.new("TextButton"),
-	GradColor_46 = Instance.new("UIGradient"),
+	UICorner_67 = Instance.new("UICorner"),
+	TextButton_17 = Instance.new("TextButton"),
+	GradColor_48 = Instance.new("UIGradient"),
 	Color_2 = Instance.new("UIGradient"),
 	tab = Instance.new("Frame"),
-	UIListLayout_23 = Instance.new("UIListLayout"),
+	UIListLayout_24 = Instance.new("UIListLayout"),
 	Settings_3 = Instance.new("Frame"),
-	UICorner_65 = Instance.new("UICorner"),
-	TextButton_17 = Instance.new("TextButton"),
-	GradColor_47 = Instance.new("UIGradient"),
+	UICorner_68 = Instance.new("UICorner"),
+	TextButton_18 = Instance.new("TextButton"),
+	GradColor_49 = Instance.new("UIGradient"),
 	Color_3 = Instance.new("UIGradient"),
 	hitbox = Instance.new("Frame"),
-	UIListLayout_24 = Instance.new("UIListLayout"),
+	UIListLayout_25 = Instance.new("UIListLayout"),
 	Settings_4 = Instance.new("Frame"),
-	UICorner_66 = Instance.new("UICorner"),
-	TextButton_18 = Instance.new("TextButton"),
-	GradColor_48 = Instance.new("UIGradient"),
+	UICorner_69 = Instance.new("UICorner"),
+	TextButton_19 = Instance.new("TextButton"),
+	GradColor_50 = Instance.new("UIGradient"),
 	Color_4 = Instance.new("UIGradient"),
 	info = Instance.new("Frame"),
-	UIListLayout_25 = Instance.new("UIListLayout"),
+	UIListLayout_26 = Instance.new("UIListLayout"),
 	Settings_5 = Instance.new("Frame"),
-	UICorner_67 = Instance.new("UICorner"),
-	TextButton_19 = Instance.new("TextButton"),
-	GradColor_49 = Instance.new("UIGradient"),
+	UICorner_70 = Instance.new("UICorner"),
+	TextButton_20 = Instance.new("TextButton"),
+	GradColor_51 = Instance.new("UIGradient"),
 	Color_5 = Instance.new("UIGradient"),
-	UICorner_68 = Instance.new("UICorner"),
+	UICorner_71 = Instance.new("UICorner"),
 	beta = Instance.new("TextLabel"),
-	GradColor_50 = Instance.new("UIGradient"),
+	GradColor_52 = Instance.new("UIGradient"),
 }
 
 --Properties:
@@ -1917,7 +1928,7 @@ Universal.Title_19.BackgroundTransparency = 0.900
 Universal.Title_19.BorderSizePixel = 0
 Universal.Title_19.Size = UDim2.new(0, 210, 0, 20)
 Universal.Title_19.Font = Enum.Font.Roboto
-Universal.Title_19.Text = "Aimbot"
+Universal.Title_19.Text = "Hitbox"
 Universal.Title_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 Universal.Title_19.TextSize = 14.000
 Universal.Title_19.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -1976,6 +1987,79 @@ Universal.GradColor_42.Parent = Universal.Subtitle_19
 
 Universal.UICorner_59.Parent = Universal.hitboc
 
+Universal.toggle.Name = "toggle"
+Universal.toggle.Parent = Universal.Frame_26
+Universal.toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.toggle.BackgroundTransparency = 0.900
+Universal.toggle.BorderSizePixel = 0
+Universal.toggle.Size = UDim2.new(0, 210, 0, 110)
+
+Universal.Title_20.Name = "Title"
+Universal.Title_20.Parent = Universal.toggle
+Universal.Title_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.Title_20.BackgroundTransparency = 0.900
+Universal.Title_20.BorderSizePixel = 0
+Universal.Title_20.Size = UDim2.new(0, 210, 0, 20)
+Universal.Title_20.Font = Enum.Font.Roboto
+Universal.Title_20.Text = "Hitbox"
+Universal.Title_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Title_20.TextSize = 14.000
+Universal.Title_20.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Title_20.TextStrokeTransparency = 0.900
+
+Universal.UICorner_60.Parent = Universal.Title_20
+
+Universal.GradColor_43.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Universal.GradColor_43.Name = "GradColor"
+Universal.GradColor_43.Parent = Universal.Title_20
+
+Universal.Frame_28.Parent = Universal.toggle
+Universal.Frame_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Frame_28.BackgroundTransparency = 1.000
+Universal.Frame_28.BorderSizePixel = 0
+Universal.Frame_28.Position = UDim2.new(0, 0, 0.200000003, 0)
+Universal.Frame_28.Size = UDim2.new(0, 210, 0, 75)
+
+Universal.UIListLayout_20.Parent = Universal.Frame_28
+Universal.UIListLayout_20.FillDirection = Enum.FillDirection.Horizontal
+Universal.UIListLayout_20.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Universal.UIListLayout_20.SortOrder = Enum.SortOrder.LayoutOrder
+Universal.UIListLayout_20.VerticalAlignment = Enum.VerticalAlignment.Bottom
+Universal.UIListLayout_20.Padding = UDim.new(0, 15)
+
+Universal.TextButton_15.Parent = Universal.Frame_28
+Universal.TextButton_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.TextButton_15.BackgroundTransparency = 0.900
+Universal.TextButton_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Universal.TextButton_15.BorderSizePixel = 0
+Universal.TextButton_15.Size = UDim2.new(0, 50, 0, 50)
+Universal.TextButton_15.Font = Enum.Font.SourceSans
+Universal.TextButton_15.Text = "TeamCheck"
+Universal.TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextButton_15.TextSize = 14.000
+
+Universal.UICorner_61.Parent = Universal.TextButton_15
+
+Universal.Subtitle_20.Name = "Subtitle"
+Universal.Subtitle_20.Parent = Universal.toggle
+Universal.Subtitle_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.Subtitle_20.BackgroundTransparency = 1.000
+Universal.Subtitle_20.BorderSizePixel = 0
+Universal.Subtitle_20.Position = UDim2.new(0, 0, 0, 20)
+Universal.Subtitle_20.Size = UDim2.new(0, 210, 0, 20)
+Universal.Subtitle_20.Font = Enum.Font.Roboto
+Universal.Subtitle_20.Text = "Team Check"
+Universal.Subtitle_20.TextColor3 = Color3.fromRGB(200, 200, 200)
+Universal.Subtitle_20.TextSize = 14.000
+Universal.Subtitle_20.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
+Universal.Subtitle_20.TextStrokeTransparency = 0.900
+
+Universal.GradColor_44.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Universal.GradColor_44.Name = "GradColor"
+Universal.GradColor_44.Parent = Universal.Subtitle_20
+
+Universal.UICorner_62.Parent = Universal.toggle
+
 Universal.Background.Name = "Background"
 Universal.Background.Parent = Universal.Main
 Universal.Background.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1984,8 +2068,8 @@ Universal.Background.BackgroundTransparency = 0.350
 Universal.Background.BorderSizePixel = 0
 Universal.Background.Position = UDim2.new(0.5, 0, 0.5, 0)
 
-Universal.UICorner_60.CornerRadius = UDim.new(1, 0)
-Universal.UICorner_60.Parent = Universal.Background
+Universal.UICorner_63.CornerRadius = UDim.new(1, 0)
+Universal.UICorner_63.Parent = Universal.Background
 
 Universal.UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))}
 Universal.UIGradient_5.Parent = Universal.Background
@@ -2012,37 +2096,37 @@ Universal.Shadow_3.SliceCenter = Rect.new(23, 23, 277, 277)
 Universal.UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))}
 Universal.UIGradient_7.Parent = Universal.Shadow_3
 
-Universal.Frame_28.Parent = Universal.Main
-Universal.Frame_28.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Universal.Frame_28.BackgroundTransparency = 0.850
-Universal.Frame_28.BorderSizePixel = 0
-Universal.Frame_28.ClipsDescendants = true
-Universal.Frame_28.Size = UDim2.new(0, 150, 0, 400)
-Universal.Frame_28.ZIndex = 2
+Universal.Frame_29.Parent = Universal.Main
+Universal.Frame_29.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.Frame_29.BackgroundTransparency = 0.850
+Universal.Frame_29.BorderSizePixel = 0
+Universal.Frame_29.ClipsDescendants = true
+Universal.Frame_29.Size = UDim2.new(0, 150, 0, 400)
+Universal.Frame_29.ZIndex = 2
 
-Universal.UICorner_61.Parent = Universal.Frame_28
+Universal.UICorner_64.Parent = Universal.Frame_29
 
-Universal.Title_20.Name = "Title"
-Universal.Title_20.Parent = Universal.Frame_28
-Universal.Title_20.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.Title_20.BackgroundTransparency = 1.000
-Universal.Title_20.BorderSizePixel = 0
-Universal.Title_20.Size = UDim2.new(1, 0, 0.0250000004, 30)
-Universal.Title_20.ZIndex = 10
-Universal.Title_20.Font = Enum.Font.SourceSansSemibold
-Universal.Title_20.Text = "     Universal"
-Universal.Title_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Title_20.TextSize = 24.000
-Universal.Title_20.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Title_20.TextXAlignment = Enum.TextXAlignment.Left
-Universal.Title_20.TextYAlignment = Enum.TextYAlignment.Bottom
+Universal.Title_21.Name = "Title"
+Universal.Title_21.Parent = Universal.Frame_29
+Universal.Title_21.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.Title_21.BackgroundTransparency = 1.000
+Universal.Title_21.BorderSizePixel = 0
+Universal.Title_21.Size = UDim2.new(1, 0, 0.0250000004, 30)
+Universal.Title_21.ZIndex = 10
+Universal.Title_21.Font = Enum.Font.SourceSansSemibold
+Universal.Title_21.Text = "     Universal"
+Universal.Title_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Title_21.TextSize = 24.000
+Universal.Title_21.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Title_21.TextXAlignment = Enum.TextXAlignment.Left
+Universal.Title_21.TextYAlignment = Enum.TextYAlignment.Bottom
 
-Universal.GradColor_43.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_43.Name = "GradColor"
-Universal.GradColor_43.Parent = Universal.Title_20
+Universal.GradColor_45.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_45.Name = "GradColor"
+Universal.GradColor_45.Parent = Universal.Title_21
 
 Universal.Time.Name = "Time"
-Universal.Time.Parent = Universal.Frame_28
+Universal.Time.Parent = Universal.Frame_29
 Universal.Time.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Universal.Time.BackgroundTransparency = 1.000
 Universal.Time.BorderSizePixel = 0
@@ -2056,37 +2140,37 @@ Universal.Time.TextSize = 18.000
 Universal.Time.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Universal.Time.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_44.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_44.Name = "GradColor"
-Universal.GradColor_44.Parent = Universal.Time
+Universal.GradColor_46.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_46.Name = "GradColor"
+Universal.GradColor_46.Parent = Universal.Time
 
-Universal.Frame_29.Parent = Universal.Frame_28
-Universal.Frame_29.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Universal.Frame_29.BackgroundTransparency = 0.800
-Universal.Frame_29.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Universal.Frame_29.BorderSizePixel = 0
-Universal.Frame_29.Size = UDim2.new(0, 158, 1, 0)
+Universal.Frame_30.Parent = Universal.Frame_29
+Universal.Frame_30.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Universal.Frame_30.BackgroundTransparency = 0.800
+Universal.Frame_30.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Universal.Frame_30.BorderSizePixel = 0
+Universal.Frame_30.Size = UDim2.new(0, 158, 1, 0)
 
-Universal.UICorner_62.Parent = Universal.Frame_29
+Universal.UICorner_65.Parent = Universal.Frame_30
 
 Universal.Select.Name = "Select"
-Universal.Select.Parent = Universal.Frame_28
+Universal.Select.Parent = Universal.Frame_29
 
-Universal.Frame_30.Parent = Universal.Select
-Universal.Frame_30.AnchorPoint = Vector2.new(0.5, 0)
-Universal.Frame_30.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.Frame_30.BackgroundTransparency = 1.000
-Universal.Frame_30.BorderSizePixel = 0
-Universal.Frame_30.Position = UDim2.new(0.5, 0, 0, 70)
-Universal.Frame_30.Size = UDim2.new(0, 124, 0, 135)
-Universal.Frame_30.ZIndex = 3
+Universal.Frame_31.Parent = Universal.Select
+Universal.Frame_31.AnchorPoint = Vector2.new(0.5, 0)
+Universal.Frame_31.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.Frame_31.BackgroundTransparency = 1.000
+Universal.Frame_31.BorderSizePixel = 0
+Universal.Frame_31.Position = UDim2.new(0.5, 0, 0, 70)
+Universal.Frame_31.Size = UDim2.new(0, 124, 0, 135)
+Universal.Frame_31.ZIndex = 3
 
-Universal.UIListLayout_20.Parent = Universal.Frame_30
-Universal.UIListLayout_20.SortOrder = Enum.SortOrder.LayoutOrder
-Universal.UIListLayout_20.Padding = UDim.new(-0.699999988, 5)
+Universal.UIListLayout_21.Parent = Universal.Frame_31
+Universal.UIListLayout_21.SortOrder = Enum.SortOrder.LayoutOrder
+Universal.UIListLayout_21.Padding = UDim.new(-0.699999988, 5)
 
 Universal.cheat.Name = "cheat"
-Universal.cheat.Parent = Universal.Frame_30
+Universal.cheat.Parent = Universal.Frame_31
 Universal.cheat.AnchorPoint = Vector2.new(0.5, 0)
 Universal.cheat.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Universal.cheat.BackgroundTransparency = 1.000
@@ -2095,8 +2179,8 @@ Universal.cheat.Position = UDim2.new(0.5, 0, 0, 70)
 Universal.cheat.Size = UDim2.new(0, 124, 0, 135)
 Universal.cheat.ZIndex = 3
 
-Universal.UIListLayout_21.Parent = Universal.cheat
-Universal.UIListLayout_21.Padding = UDim.new(0, 5)
+Universal.UIListLayout_22.Parent = Universal.cheat
+Universal.UIListLayout_22.Padding = UDim.new(0, 5)
 
 Universal.Settings.Name = "Settings"
 Universal.Settings.Parent = Universal.cheat
@@ -2104,54 +2188,9 @@ Universal.Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Universal.Settings.BackgroundTransparency = 1.000
 Universal.Settings.Size = UDim2.new(0, 70, 0, 27)
 
-Universal.UICorner_63.Parent = Universal.Settings
+Universal.UICorner_66.Parent = Universal.Settings
 
-Universal.TextButton_15.Parent = Universal.Settings
-Universal.TextButton_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Universal.TextButton_15.BackgroundTransparency = 1.000
-Universal.TextButton_15.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Universal.TextButton_15.BorderSizePixel = 0
-Universal.TextButton_15.Size = UDim2.new(1, 0, 1, 0)
-Universal.TextButton_15.ZIndex = 6
-Universal.TextButton_15.AutoButtonColor = false
-Universal.TextButton_15.Font = Enum.Font.Roboto
-Universal.TextButton_15.Text = "  Aimbot"
-Universal.TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-Universal.TextButton_15.TextSize = 16.000
-Universal.TextButton_15.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
-Universal.TextButton_15.TextStrokeTransparency = 0.950
-Universal.TextButton_15.TextXAlignment = Enum.TextXAlignment.Left
-
-Universal.GradColor_45.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_45.Name = "GradColor"
-Universal.GradColor_45.Parent = Universal.TextButton_15
-
-Universal.Color.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
-Universal.Color.Name = "Color"
-Universal.Color.Parent = Universal.Settings
-
-Universal.speed.Name = "speed"
-Universal.speed.Parent = Universal.Frame_30
-Universal.speed.AnchorPoint = Vector2.new(0.5, 0)
-Universal.speed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.speed.BackgroundTransparency = 1.000
-Universal.speed.BorderSizePixel = 0
-Universal.speed.Position = UDim2.new(0.5, 0, 0, 70)
-Universal.speed.Size = UDim2.new(0, 124, 0, 135)
-Universal.speed.ZIndex = 3
-
-Universal.UIListLayout_22.Parent = Universal.speed
-Universal.UIListLayout_22.Padding = UDim.new(0, 5)
-
-Universal.Settings_2.Name = "Settings"
-Universal.Settings_2.Parent = Universal.speed
-Universal.Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Settings_2.BackgroundTransparency = 1.000
-Universal.Settings_2.Size = UDim2.new(0, 70, 0, 27)
-
-Universal.UICorner_64.Parent = Universal.Settings_2
-
-Universal.TextButton_16.Parent = Universal.Settings_2
+Universal.TextButton_16.Parent = Universal.Settings
 Universal.TextButton_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_16.BackgroundTransparency = 1.000
 Universal.TextButton_16.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -2160,43 +2199,43 @@ Universal.TextButton_16.Size = UDim2.new(1, 0, 1, 0)
 Universal.TextButton_16.ZIndex = 6
 Universal.TextButton_16.AutoButtonColor = false
 Universal.TextButton_16.Font = Enum.Font.Roboto
-Universal.TextButton_16.Text = "  Movement"
+Universal.TextButton_16.Text = "  Aimbot"
 Universal.TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_16.TextSize = 16.000
 Universal.TextButton_16.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
 Universal.TextButton_16.TextStrokeTransparency = 0.950
 Universal.TextButton_16.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_46.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_46.Name = "GradColor"
-Universal.GradColor_46.Parent = Universal.TextButton_16
+Universal.GradColor_47.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_47.Name = "GradColor"
+Universal.GradColor_47.Parent = Universal.TextButton_16
 
-Universal.Color_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
-Universal.Color_2.Name = "Color"
-Universal.Color_2.Parent = Universal.Settings_2
+Universal.Color.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
+Universal.Color.Name = "Color"
+Universal.Color.Parent = Universal.Settings
 
-Universal.tab.Name = "tab"
-Universal.tab.Parent = Universal.Frame_30
-Universal.tab.AnchorPoint = Vector2.new(0.5, 0)
-Universal.tab.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.tab.BackgroundTransparency = 1.000
-Universal.tab.BorderSizePixel = 0
-Universal.tab.Position = UDim2.new(0.5, 0, 0, 70)
-Universal.tab.Size = UDim2.new(0, 124, 0, 135)
-Universal.tab.ZIndex = 3
+Universal.speed.Name = "speed"
+Universal.speed.Parent = Universal.Frame_31
+Universal.speed.AnchorPoint = Vector2.new(0.5, 0)
+Universal.speed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.speed.BackgroundTransparency = 1.000
+Universal.speed.BorderSizePixel = 0
+Universal.speed.Position = UDim2.new(0.5, 0, 0, 70)
+Universal.speed.Size = UDim2.new(0, 124, 0, 135)
+Universal.speed.ZIndex = 3
 
-Universal.UIListLayout_23.Parent = Universal.tab
+Universal.UIListLayout_23.Parent = Universal.speed
 Universal.UIListLayout_23.Padding = UDim.new(0, 5)
 
-Universal.Settings_3.Name = "Settings"
-Universal.Settings_3.Parent = Universal.tab
-Universal.Settings_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Settings_3.BackgroundTransparency = 1.000
-Universal.Settings_3.Size = UDim2.new(0, 70, 0, 27)
+Universal.Settings_2.Name = "Settings"
+Universal.Settings_2.Parent = Universal.speed
+Universal.Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Settings_2.BackgroundTransparency = 1.000
+Universal.Settings_2.Size = UDim2.new(0, 70, 0, 27)
 
-Universal.UICorner_65.Parent = Universal.Settings_3
+Universal.UICorner_67.Parent = Universal.Settings_2
 
-Universal.TextButton_17.Parent = Universal.Settings_3
+Universal.TextButton_17.Parent = Universal.Settings_2
 Universal.TextButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_17.BackgroundTransparency = 1.000
 Universal.TextButton_17.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -2205,43 +2244,43 @@ Universal.TextButton_17.Size = UDim2.new(1, 0, 1, 0)
 Universal.TextButton_17.ZIndex = 6
 Universal.TextButton_17.AutoButtonColor = false
 Universal.TextButton_17.Font = Enum.Font.Roboto
-Universal.TextButton_17.Text = "  Visual"
+Universal.TextButton_17.Text = "  Movement"
 Universal.TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_17.TextSize = 16.000
 Universal.TextButton_17.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
 Universal.TextButton_17.TextStrokeTransparency = 0.950
 Universal.TextButton_17.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_47.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_47.Name = "GradColor"
-Universal.GradColor_47.Parent = Universal.TextButton_17
+Universal.GradColor_48.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_48.Name = "GradColor"
+Universal.GradColor_48.Parent = Universal.TextButton_17
 
-Universal.Color_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
-Universal.Color_3.Name = "Color"
-Universal.Color_3.Parent = Universal.Settings_3
+Universal.Color_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
+Universal.Color_2.Name = "Color"
+Universal.Color_2.Parent = Universal.Settings_2
 
-Universal.hitbox.Name = "hitbox"
-Universal.hitbox.Parent = Universal.Frame_30
-Universal.hitbox.AnchorPoint = Vector2.new(0.5, 0)
-Universal.hitbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.hitbox.BackgroundTransparency = 1.000
-Universal.hitbox.BorderSizePixel = 0
-Universal.hitbox.Position = UDim2.new(0.5, 0, 0, 70)
-Universal.hitbox.Size = UDim2.new(0, 124, 0, 135)
-Universal.hitbox.ZIndex = 3
+Universal.tab.Name = "tab"
+Universal.tab.Parent = Universal.Frame_31
+Universal.tab.AnchorPoint = Vector2.new(0.5, 0)
+Universal.tab.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.tab.BackgroundTransparency = 1.000
+Universal.tab.BorderSizePixel = 0
+Universal.tab.Position = UDim2.new(0.5, 0, 0, 70)
+Universal.tab.Size = UDim2.new(0, 124, 0, 135)
+Universal.tab.ZIndex = 3
 
-Universal.UIListLayout_24.Parent = Universal.hitbox
+Universal.UIListLayout_24.Parent = Universal.tab
 Universal.UIListLayout_24.Padding = UDim.new(0, 5)
 
-Universal.Settings_4.Name = "Settings"
-Universal.Settings_4.Parent = Universal.hitbox
-Universal.Settings_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Settings_4.BackgroundTransparency = 1.000
-Universal.Settings_4.Size = UDim2.new(0, 70, 0, 27)
+Universal.Settings_3.Name = "Settings"
+Universal.Settings_3.Parent = Universal.tab
+Universal.Settings_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Settings_3.BackgroundTransparency = 1.000
+Universal.Settings_3.Size = UDim2.new(0, 70, 0, 27)
 
-Universal.UICorner_66.Parent = Universal.Settings_4
+Universal.UICorner_68.Parent = Universal.Settings_3
 
-Universal.TextButton_18.Parent = Universal.Settings_4
+Universal.TextButton_18.Parent = Universal.Settings_3
 Universal.TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_18.BackgroundTransparency = 1.000
 Universal.TextButton_18.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -2250,43 +2289,43 @@ Universal.TextButton_18.Size = UDim2.new(1, 0, 1, 0)
 Universal.TextButton_18.ZIndex = 6
 Universal.TextButton_18.AutoButtonColor = false
 Universal.TextButton_18.Font = Enum.Font.Roboto
-Universal.TextButton_18.Text = "  Hitbox"
+Universal.TextButton_18.Text = "  Visual"
 Universal.TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_18.TextSize = 16.000
 Universal.TextButton_18.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
 Universal.TextButton_18.TextStrokeTransparency = 0.950
 Universal.TextButton_18.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_48.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_48.Name = "GradColor"
-Universal.GradColor_48.Parent = Universal.TextButton_18
+Universal.GradColor_49.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_49.Name = "GradColor"
+Universal.GradColor_49.Parent = Universal.TextButton_18
 
-Universal.Color_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
-Universal.Color_4.Name = "Color"
-Universal.Color_4.Parent = Universal.Settings_4
+Universal.Color_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
+Universal.Color_3.Name = "Color"
+Universal.Color_3.Parent = Universal.Settings_3
 
-Universal.info.Name = "info"
-Universal.info.Parent = Universal.Frame_30
-Universal.info.AnchorPoint = Vector2.new(0.5, 0)
-Universal.info.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Universal.info.BackgroundTransparency = 1.000
-Universal.info.BorderSizePixel = 0
-Universal.info.Position = UDim2.new(0.5, 0, 0, 70)
-Universal.info.Size = UDim2.new(0, 124, 0, 135)
-Universal.info.ZIndex = 3
+Universal.hitbox.Name = "hitbox"
+Universal.hitbox.Parent = Universal.Frame_31
+Universal.hitbox.AnchorPoint = Vector2.new(0.5, 0)
+Universal.hitbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.hitbox.BackgroundTransparency = 1.000
+Universal.hitbox.BorderSizePixel = 0
+Universal.hitbox.Position = UDim2.new(0.5, 0, 0, 70)
+Universal.hitbox.Size = UDim2.new(0, 124, 0, 135)
+Universal.hitbox.ZIndex = 3
 
-Universal.UIListLayout_25.Parent = Universal.info
+Universal.UIListLayout_25.Parent = Universal.hitbox
 Universal.UIListLayout_25.Padding = UDim.new(0, 5)
 
-Universal.Settings_5.Name = "Settings"
-Universal.Settings_5.Parent = Universal.info
-Universal.Settings_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Universal.Settings_5.BackgroundTransparency = 1.000
-Universal.Settings_5.Size = UDim2.new(0, 70, 0, 27)
+Universal.Settings_4.Name = "Settings"
+Universal.Settings_4.Parent = Universal.hitbox
+Universal.Settings_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Settings_4.BackgroundTransparency = 1.000
+Universal.Settings_4.Size = UDim2.new(0, 70, 0, 27)
 
-Universal.UICorner_67.Parent = Universal.Settings_5
+Universal.UICorner_69.Parent = Universal.Settings_4
 
-Universal.TextButton_19.Parent = Universal.Settings_5
+Universal.TextButton_19.Parent = Universal.Settings_4
 Universal.TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_19.BackgroundTransparency = 1.000
 Universal.TextButton_19.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -2295,22 +2334,67 @@ Universal.TextButton_19.Size = UDim2.new(1, 0, 1, 0)
 Universal.TextButton_19.ZIndex = 6
 Universal.TextButton_19.AutoButtonColor = false
 Universal.TextButton_19.Font = Enum.Font.Roboto
-Universal.TextButton_19.Text = "  Info"
+Universal.TextButton_19.Text = "  Hitbox"
 Universal.TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 Universal.TextButton_19.TextSize = 16.000
 Universal.TextButton_19.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
 Universal.TextButton_19.TextStrokeTransparency = 0.950
 Universal.TextButton_19.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_49.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_49.Name = "GradColor"
-Universal.GradColor_49.Parent = Universal.TextButton_19
+Universal.GradColor_50.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_50.Name = "GradColor"
+Universal.GradColor_50.Parent = Universal.TextButton_19
+
+Universal.Color_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
+Universal.Color_4.Name = "Color"
+Universal.Color_4.Parent = Universal.Settings_4
+
+Universal.info.Name = "info"
+Universal.info.Parent = Universal.Frame_31
+Universal.info.AnchorPoint = Vector2.new(0.5, 0)
+Universal.info.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Universal.info.BackgroundTransparency = 1.000
+Universal.info.BorderSizePixel = 0
+Universal.info.Position = UDim2.new(0.5, 0, 0, 70)
+Universal.info.Size = UDim2.new(0, 124, 0, 135)
+Universal.info.ZIndex = 3
+
+Universal.UIListLayout_26.Parent = Universal.info
+Universal.UIListLayout_26.Padding = UDim.new(0, 5)
+
+Universal.Settings_5.Name = "Settings"
+Universal.Settings_5.Parent = Universal.info
+Universal.Settings_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.Settings_5.BackgroundTransparency = 1.000
+Universal.Settings_5.Size = UDim2.new(0, 70, 0, 27)
+
+Universal.UICorner_70.Parent = Universal.Settings_5
+
+Universal.TextButton_20.Parent = Universal.Settings_5
+Universal.TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextButton_20.BackgroundTransparency = 1.000
+Universal.TextButton_20.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextButton_20.BorderSizePixel = 0
+Universal.TextButton_20.Size = UDim2.new(1, 0, 1, 0)
+Universal.TextButton_20.ZIndex = 6
+Universal.TextButton_20.AutoButtonColor = false
+Universal.TextButton_20.Font = Enum.Font.Roboto
+Universal.TextButton_20.Text = "  Info"
+Universal.TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextButton_20.TextSize = 16.000
+Universal.TextButton_20.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
+Universal.TextButton_20.TextStrokeTransparency = 0.950
+Universal.TextButton_20.TextXAlignment = Enum.TextXAlignment.Left
+
+Universal.GradColor_51.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_51.Name = "GradColor"
+Universal.GradColor_51.Parent = Universal.TextButton_20
 
 Universal.Color_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 154, 247)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 180, 223))}
 Universal.Color_5.Name = "Color"
 Universal.Color_5.Parent = Universal.Settings_5
 
-Universal.UICorner_68.Parent = Universal.Main
+Universal.UICorner_71.Parent = Universal.Main
 
 Universal.beta.Name = "beta"
 Universal.beta.Parent = Universal.Main
@@ -2327,13 +2411,13 @@ Universal.beta.TextSize = 18.000
 Universal.beta.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Universal.beta.TextXAlignment = Enum.TextXAlignment.Left
 
-Universal.GradColor_50.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
-Universal.GradColor_50.Name = "GradColor"
-Universal.GradColor_50.Parent = Universal.beta
+Universal.GradColor_52.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 85, 255))}
+Universal.GradColor_52.Name = "GradColor"
+Universal.GradColor_52.Parent = Universal.beta
 
 -- Scripts:
 
-local function INDG_fake_script() -- Universal.Frame.LocalScript 
+local function XGGN_fake_script() -- Universal.Frame.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Frame)
 
 	
@@ -2511,8 +2595,8 @@ local function INDG_fake_script() -- Universal.Frame.LocalScript
 	script.Parent:Destroy()
 	
 end
-coroutine.wrap(INDG_fake_script)()
-local function RBOIDR_fake_script() -- Universal.OpenClose.LocalScript 
+coroutine.wrap(XGGN_fake_script)()
+local function TGCZ_fake_script() -- Universal.OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', Universal.OpenClose)
 
 	local ui = game:GetService("UserInputService")
@@ -2697,8 +2781,8 @@ local function RBOIDR_fake_script() -- Universal.OpenClose.LocalScript
 		canClick = true
 	end)
 end
-coroutine.wrap(RBOIDR_fake_script)()
-local function SVSZGU_fake_script() -- Universal.OpenClose.Blur 
+coroutine.wrap(TGCZ_fake_script)()
+local function HUCUIAF_fake_script() -- Universal.OpenClose.Blur 
 	local script = Instance.new('Script', Universal.OpenClose)
 
 	local Workspace = game:GetService("Workspace")
@@ -2759,8 +2843,8 @@ local function SVSZGU_fake_script() -- Universal.OpenClose.Blur
 	SetUpEffect()
 	RunService.RenderStepped:Connect(functionToBind)
 end
-coroutine.wrap(SVSZGU_fake_script)()
-local function GSUAN_fake_script() -- Universal.TextButton.esp 
+coroutine.wrap(HUCUIAF_fake_script)()
+local function VRJZNK_fake_script() -- Universal.TextButton.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton)
 
 	local PLAYER = game.Players.LocalPlayer
@@ -3197,8 +3281,8 @@ local function GSUAN_fake_script() -- Universal.TextButton.esp
 		end
 	end)
 end
-coroutine.wrap(GSUAN_fake_script)()
-local function NZWZX_fake_script() -- Universal.TextButton.LocalScript 
+coroutine.wrap(VRJZNK_fake_script)()
+local function AGJW_fake_script() -- Universal.TextButton.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton)
 
 	local TweenService = game:GetService("TweenService")
@@ -3246,8 +3330,8 @@ local function NZWZX_fake_script() -- Universal.TextButton.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(NZWZX_fake_script)()
-local function WVMCOF_fake_script() -- Universal.TextButton_2.LocalScript 
+coroutine.wrap(AGJW_fake_script)()
+local function KISSQE_fake_script() -- Universal.TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_2)
 
 	local TweenService = game:GetService("TweenService")
@@ -3295,8 +3379,8 @@ local function WVMCOF_fake_script() -- Universal.TextButton_2.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(WVMCOF_fake_script)()
-local function APREH_fake_script() -- Universal.TextButton_3.LocalScript 
+coroutine.wrap(KISSQE_fake_script)()
+local function WLNJUH_fake_script() -- Universal.TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_3)
 
 	local TweenService = game:GetService("TweenService")
@@ -3344,8 +3428,8 @@ local function APREH_fake_script() -- Universal.TextButton_3.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(APREH_fake_script)()
-local function WZHKJ_fake_script() -- Universal.TextButton_4.LocalScript 
+coroutine.wrap(WLNJUH_fake_script)()
+local function AQQE_fake_script() -- Universal.TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_4)
 
 	local TweenService = game:GetService("TweenService")
@@ -3393,8 +3477,8 @@ local function WZHKJ_fake_script() -- Universal.TextButton_4.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(WZHKJ_fake_script)()
-local function OGED_fake_script() -- Universal.TextButton_5.LocalScript 
+coroutine.wrap(AQQE_fake_script)()
+local function DZAOIPP_fake_script() -- Universal.TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_5)
 
 	local TweenService = game:GetService("TweenService")
@@ -3442,8 +3526,8 @@ local function OGED_fake_script() -- Universal.TextButton_5.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(OGED_fake_script)()
-local function IEZOTC_fake_script() -- Universal.TextButton_6.LocalScript 
+coroutine.wrap(DZAOIPP_fake_script)()
+local function ZQAMF_fake_script() -- Universal.TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_6)
 
 	local TweenService = game:GetService("TweenService")
@@ -3491,8 +3575,8 @@ local function IEZOTC_fake_script() -- Universal.TextButton_6.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(IEZOTC_fake_script)()
-local function SOUOCHP_fake_script() -- Universal.TextButton_7.esp 
+coroutine.wrap(ZQAMF_fake_script)()
+local function RANPL_fake_script() -- Universal.TextButton_7.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_7)
 
 	local PLAYER = game.Players.LocalPlayer
@@ -3842,8 +3926,8 @@ local function SOUOCHP_fake_script() -- Universal.TextButton_7.esp
 		end
 	end)
 end
-coroutine.wrap(SOUOCHP_fake_script)()
-local function QASBM_fake_script() -- Universal.TextButton_7.LocalScript 
+coroutine.wrap(RANPL_fake_script)()
+local function RZRRTP_fake_script() -- Universal.TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_7)
 
 	local TweenService = game:GetService("TweenService")
@@ -3891,8 +3975,8 @@ local function QASBM_fake_script() -- Universal.TextButton_7.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(QASBM_fake_script)()
-local function BEWOR_fake_script() -- Universal.TextButton_8.LocalScript 
+coroutine.wrap(RZRRTP_fake_script)()
+local function IIFIEKV_fake_script() -- Universal.TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_8)
 
 	local TweenService = game:GetService("TweenService")
@@ -3940,8 +4024,8 @@ local function BEWOR_fake_script() -- Universal.TextButton_8.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(BEWOR_fake_script)()
-local function BQAGT_fake_script() -- Universal.TextButton_9.LocalScript 
+coroutine.wrap(IIFIEKV_fake_script)()
+local function GTNMVTW_fake_script() -- Universal.TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_9)
 
 	local TweenService = game:GetService("TweenService")
@@ -3989,8 +4073,8 @@ local function BQAGT_fake_script() -- Universal.TextButton_9.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(BQAGT_fake_script)()
-local function ZDDLH_fake_script() -- Universal.TextButton_10.LocalScript 
+coroutine.wrap(GTNMVTW_fake_script)()
+local function RKTV_fake_script() -- Universal.TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_10)
 
 	local TweenService = game:GetService("TweenService")
@@ -4038,8 +4122,8 @@ local function ZDDLH_fake_script() -- Universal.TextButton_10.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(ZDDLH_fake_script)()
-local function OJAHY_fake_script() -- Universal.TextButton_10.esp 
+coroutine.wrap(RKTV_fake_script)()
+local function LMNVYG_fake_script() -- Universal.TextButton_10.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_10)
 
 	local on = true
@@ -4066,8 +4150,8 @@ local function OJAHY_fake_script() -- Universal.TextButton_10.esp
 		wait()
 	end)
 end
-coroutine.wrap(OJAHY_fake_script)()
-local function JWALXHJ_fake_script() -- Universal.TextButton_11.esp 
+coroutine.wrap(LMNVYG_fake_script)()
+local function FNPFJ_fake_script() -- Universal.TextButton_11.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_11)
 
 	local UIS = game:GetService("UserInputService")
@@ -4137,8 +4221,8 @@ local function JWALXHJ_fake_script() -- Universal.TextButton_11.esp
 		wait()
 	end)
 end
-coroutine.wrap(JWALXHJ_fake_script)()
-local function SEYRI_fake_script() -- Universal.TextButton_11.LocalScript 
+coroutine.wrap(FNPFJ_fake_script)()
+local function LXIA_fake_script() -- Universal.TextButton_11.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_11)
 
 	local TweenService = game:GetService("TweenService")
@@ -4186,8 +4270,8 @@ local function SEYRI_fake_script() -- Universal.TextButton_11.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(SEYRI_fake_script)()
-local function ZLOT_fake_script() -- Universal.TextButton_12.esp 
+coroutine.wrap(LXIA_fake_script)()
+local function ZEMI_fake_script() -- Universal.TextButton_12.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_12)
 
 	local isJumping = false  -- Boolean to track whether the player is jumping
@@ -4255,8 +4339,8 @@ local function ZLOT_fake_script() -- Universal.TextButton_12.esp
 		end
 	end)
 end
-coroutine.wrap(ZLOT_fake_script)()
-local function RXTM_fake_script() -- Universal.TextButton_12.LocalScript 
+coroutine.wrap(ZEMI_fake_script)()
+local function LBFM_fake_script() -- Universal.TextButton_12.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_12)
 
 	local TweenService = game:GetService("TweenService")
@@ -4304,8 +4388,8 @@ local function RXTM_fake_script() -- Universal.TextButton_12.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(RXTM_fake_script)()
-local function KUDNK_fake_script() -- Universal.TextLabel_2.LocalScript 
+coroutine.wrap(LBFM_fake_script)()
+local function ULDU_fake_script() -- Universal.TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextLabel_2)
 
 	while true do
@@ -4313,8 +4397,8 @@ local function KUDNK_fake_script() -- Universal.TextLabel_2.LocalScript
 		script.Parent.Text = game.Players.LocalPlayer.Name
 	end
 end
-coroutine.wrap(KUDNK_fake_script)()
-local function GTAGI_fake_script() -- Universal.TextLabel_3.LocalScript 
+coroutine.wrap(ULDU_fake_script)()
+local function DEMSB_fake_script() -- Universal.TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextLabel_3)
 
 	while true do
@@ -4322,8 +4406,8 @@ local function GTAGI_fake_script() -- Universal.TextLabel_3.LocalScript
 		script.Parent.Text = game.Name
 	end
 end
-coroutine.wrap(GTAGI_fake_script)()
-local function OFVGZRN_fake_script() -- Universal.TextButton_13.LocalScript 
+coroutine.wrap(DEMSB_fake_script)()
+local function ACIA_fake_script() -- Universal.TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_13)
 
 	local TweenService = game:GetService("TweenService")
@@ -4371,22 +4455,29 @@ local function OFVGZRN_fake_script() -- Universal.TextButton_13.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(OFVGZRN_fake_script)()
-local function XHSFK_fake_script() -- Universal.TextButton_13.LocalScript 
+coroutine.wrap(ACIA_fake_script)()
+local function EYTJJFV_fake_script() -- Universal.TextButton_13.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_13)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(XHSFK_fake_script)()
-local function XDXGX_fake_script() -- Universal.TextButton_14.esp 
+coroutine.wrap(EYTJJFV_fake_script)()
+local function KWNLRX_fake_script() -- Universal.TextButton_14.esp 
 	local script = Instance.new('LocalScript', Universal.TextButton_14)
 
 	local Toggle = false
-	local Size = 15
+	local Size = 25
 	local Player = game.Players.LocalPlayer
-	
+	local TeamCheckVar = false
+	local function TeamCheck(plr)
+		if plr.Team ~= Player.Team then
+			return true
+		else
+			return false
+		end
+	end
 	local function ExpandHitbox(player)
 		if Toggle then
 			local Torso = player.Character:FindFirstChild("UpperTorso") or player.Character:FindFirstChild("Torso")
@@ -4415,9 +4506,18 @@ local function XDXGX_fake_script() -- Universal.TextButton_14.esp
 	local function UpdateHitboxes()
 		if Toggle then
 			for _, player in pairs(game.Players:GetPlayers()) do
-				if player ~= Player and player.Team ~= Player.Team then
-					ExpandHitbox(player)
+				if  player ~= Player then
+					if TeamCheckVar then
+						if TeamCheck(player) then
+							ExpandHitbox(player)
+						end
+					else
+						ExpandHitbox(player)
+					end
+					
 				end
+				
+				
 			end
 		end
 	end
@@ -4426,6 +4526,11 @@ local function XDXGX_fake_script() -- Universal.TextButton_14.esp
 		Toggle = not Toggle
 		UpdateHitboxes()
 	end)
+	script.Parent.Parent.Parent.Parent.toggle.Frame.TextButton.MouseButton1Down:Connect(function()
+		
+		TeamCheckVar = not TeamCheckVar
+		
+	end)
 	
 	game:GetService("RunService").Heartbeat:Connect(function()
 		UpdateHitboxes()
@@ -4433,8 +4538,8 @@ local function XDXGX_fake_script() -- Universal.TextButton_14.esp
 	end)
 	
 end
-coroutine.wrap(XDXGX_fake_script)()
-local function BIGL_fake_script() -- Universal.TextButton_14.LocalScript 
+coroutine.wrap(KWNLRX_fake_script)()
+local function SJKF_fake_script() -- Universal.TextButton_14.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton_14)
 
 	local TweenService = game:GetService("TweenService")
@@ -4482,8 +4587,57 @@ local function BIGL_fake_script() -- Universal.TextButton_14.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(BIGL_fake_script)()
-local function QVYLUO_fake_script() -- Universal.Time.LocalScript 
+coroutine.wrap(SJKF_fake_script)()
+local function DKUPZT_fake_script() -- Universal.TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', Universal.TextButton_15)
+
+	local TweenService = game:GetService("TweenService")
+	local Button = script.Parent
+	local canClicke = true
+	-- Function to play the button press animation
+	
+	
+	-- Function to play the button press animation
+	local function ButtonPressAnimation()
+		-- Define the properties for the tween animation
+		local originalSize = Button.Size
+		local pressedSize = UDim2.new(originalSize.X.Scale, originalSize.X.Offset - 5, originalSize.Y.Scale, originalSize.Y.Offset - 5)
+		local tweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	
+		-- Create the tween for the button press animation
+		local pressTween = TweenService:Create(Button, tweenInfo, {Size = pressedSize})
+	
+		-- Define a separate tween to reverse the animation
+		local reverseTween = TweenService:Create(Button, tweenInfo, {Size = originalSize})
+	
+		-- Play the press animation
+		pressTween:Play()
+	
+		-- After a short delay, reverse the button size back to its original state
+		wait(0.1)
+		reverseTween:Play()
+	end
+	
+	-- Connect the function to the mouse button click event
+	
+	-- Connect the function to the mouse button click event
+	script.Parent.MouseButton1Down:Connect(function()
+		-- Play the button press animation when clicked
+		if not canClicke then
+			return
+		end
+	
+		-- Disable clicking for debounce period
+		canClicke = false
+	
+		ButtonPressAnimation()
+		wait(0.8) -- Debounce period
+		canClicke = true
+		-- Add other actions you want to perform when the button is clicked here
+	end)
+end
+coroutine.wrap(DKUPZT_fake_script)()
+local function JJMO_fake_script() -- Universal.Time.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Time)
 
 	while true do
@@ -4498,9 +4652,9 @@ local function QVYLUO_fake_script() -- Universal.Time.LocalScript
 		task.wait(1)
 	end
 end
-coroutine.wrap(QVYLUO_fake_script)()
-local function OQIGJW_fake_script() -- Universal.Frame_30.LocalScript 
-	local script = Instance.new('LocalScript', Universal.Frame_30)
+coroutine.wrap(JJMO_fake_script)()
+local function FEFVGL_fake_script() -- Universal.Frame_31.LocalScript 
+	local script = Instance.new('LocalScript', Universal.Frame_31)
 
 	local Options = script.Parent
 	local Page = script.Parent.Parent.Parent.Parent.Menu
@@ -4532,4 +4686,4 @@ local function OQIGJW_fake_script() -- Universal.Frame_30.LocalScript
 	
 	
 end
-coroutine.wrap(OQIGJW_fake_script)()
+coroutine.wrap(FEFVGL_fake_script)()
