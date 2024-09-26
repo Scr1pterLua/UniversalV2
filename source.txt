@@ -2364,7 +2364,7 @@ Universal.UIGradient_7.Parent = Universal.Shadow_3
 
 -- Scripts:
 
-local function HTYYSV_fake_script() -- Universal.Frame.LocalScript 
+local function NOYK_fake_script() -- Universal.Frame.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Frame)
 
 	
@@ -2543,8 +2543,8 @@ local function HTYYSV_fake_script() -- Universal.Frame.LocalScript
 	script.Parent:Destroy()
 	
 end
-coroutine.wrap(HTYYSV_fake_script)()
-local function NJRJQR_fake_script() -- Universal.OpenClose.LocalScript 
+coroutine.wrap(NOYK_fake_script)()
+local function ZOCUUL_fake_script() -- Universal.OpenClose.LocalScript 
 	local script = Instance.new('LocalScript', Universal.OpenClose)
 
 	local ui = game:GetService("UserInputService")
@@ -2731,8 +2731,8 @@ local function NJRJQR_fake_script() -- Universal.OpenClose.LocalScript
 		canClick = true
 	end)
 end
-coroutine.wrap(NJRJQR_fake_script)()
-local function HQHCI_fake_script() -- Universal.OpenClose.Blur 
+coroutine.wrap(ZOCUUL_fake_script)()
+local function SJDLG_fake_script() -- Universal.OpenClose.Blur 
 	local script = Instance.new('Script', Universal.OpenClose)
 
 	local Workspace = game:GetService("Workspace")
@@ -2793,8 +2793,8 @@ local function HQHCI_fake_script() -- Universal.OpenClose.Blur
 	SetUpEffect()
 	RunService.RenderStepped:Connect(functionToBind)
 end
-coroutine.wrap(HQHCI_fake_script)()
-local function MTAAFT_fake_script() -- Universal.Toggle_2.ToggleManager 
+coroutine.wrap(SJDLG_fake_script)()
+local function SUNZO_fake_script() -- Universal.Toggle_2.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_2)
 
 	-- // Vars
@@ -2853,8 +2853,8 @@ local function MTAAFT_fake_script() -- Universal.Toggle_2.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(MTAAFT_fake_script)()
-local function JEAYFG_fake_script() -- Universal.Toggle_2.LocalScript 
+coroutine.wrap(SUNZO_fake_script)()
+local function JTWKQGY_fake_script() -- Universal.Toggle_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_2)
 
 	local TweenService = game:GetService("TweenService")
@@ -2902,8 +2902,8 @@ local function JEAYFG_fake_script() -- Universal.Toggle_2.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(JEAYFG_fake_script)()
-local function YVELA_fake_script() -- Universal.Toggle_2.esp 
+coroutine.wrap(JTWKQGY_fake_script)()
+local function KXXYY_fake_script() -- Universal.Toggle_2.esp 
 	local script = Instance.new('LocalScript', Universal.Toggle_2)
 
 	
@@ -3388,8 +3388,8 @@ local function YVELA_fake_script() -- Universal.Toggle_2.esp
 		end
 	end)
 end
-coroutine.wrap(YVELA_fake_script)()
-local function UDDBV_fake_script() -- Universal.Toggle_3.ToggleManager 
+coroutine.wrap(KXXYY_fake_script)()
+local function QXJRD_fake_script() -- Universal.Toggle_3.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_3)
 
 	-- // Vars
@@ -3448,8 +3448,8 @@ local function UDDBV_fake_script() -- Universal.Toggle_3.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(UDDBV_fake_script)()
-local function WTPDSO_fake_script() -- Universal.Toggle_3.LocalScript 
+coroutine.wrap(QXJRD_fake_script)()
+local function KNACDNJ_fake_script() -- Universal.Toggle_3.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_3)
 
 	local TweenService = game:GetService("TweenService")
@@ -3497,8 +3497,8 @@ local function WTPDSO_fake_script() -- Universal.Toggle_3.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(WTPDSO_fake_script)()
-local function FQDRO_fake_script() -- Universal.Toggle_4.ToggleManager 
+coroutine.wrap(KNACDNJ_fake_script)()
+local function WQWD_fake_script() -- Universal.Toggle_4.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_4)
 
 	-- // Vars
@@ -3557,8 +3557,8 @@ local function FQDRO_fake_script() -- Universal.Toggle_4.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(FQDRO_fake_script)()
-local function VEOVWS_fake_script() -- Universal.Toggle_4.LocalScript 
+coroutine.wrap(WQWD_fake_script)()
+local function ZZPGXRE_fake_script() -- Universal.Toggle_4.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_4)
 
 	local TweenService = game:GetService("TweenService")
@@ -3606,8 +3606,8 @@ local function VEOVWS_fake_script() -- Universal.Toggle_4.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(VEOVWS_fake_script)()
-local function AVET_fake_script() -- Universal.Toggle_5.ToggleManager 
+coroutine.wrap(ZZPGXRE_fake_script)()
+local function ZDGVXM_fake_script() -- Universal.Toggle_5.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_5)
 
 	-- // Vars
@@ -3666,8 +3666,8 @@ local function AVET_fake_script() -- Universal.Toggle_5.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(AVET_fake_script)()
-local function KPZT_fake_script() -- Universal.Toggle_5.LocalScript 
+coroutine.wrap(ZDGVXM_fake_script)()
+local function XGUYUKZ_fake_script() -- Universal.Toggle_5.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_5)
 
 	local TweenService = game:GetService("TweenService")
@@ -3715,8 +3715,8 @@ local function KPZT_fake_script() -- Universal.Toggle_5.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(KPZT_fake_script)()
-local function ALKL_fake_script() -- Universal.Toggle_6.ToggleManager 
+coroutine.wrap(XGUYUKZ_fake_script)()
+local function CMJJNLS_fake_script() -- Universal.Toggle_6.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_6)
 
 	-- // Vars
@@ -3775,8 +3775,8 @@ local function ALKL_fake_script() -- Universal.Toggle_6.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(ALKL_fake_script)()
-local function NOZT_fake_script() -- Universal.Toggle_6.LocalScript 
+coroutine.wrap(CMJJNLS_fake_script)()
+local function ANLZWAL_fake_script() -- Universal.Toggle_6.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_6)
 
 	local TweenService = game:GetService("TweenService")
@@ -3824,8 +3824,8 @@ local function NOZT_fake_script() -- Universal.Toggle_6.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(NOZT_fake_script)()
-local function FLOY_fake_script() -- Universal.Toggle_7.ToggleManager 
+coroutine.wrap(ANLZWAL_fake_script)()
+local function UAZG_fake_script() -- Universal.Toggle_7.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_7)
 
 	-- // Vars
@@ -3884,8 +3884,8 @@ local function FLOY_fake_script() -- Universal.Toggle_7.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(FLOY_fake_script)()
-local function XFAHRZ_fake_script() -- Universal.Toggle_7.LocalScript 
+coroutine.wrap(UAZG_fake_script)()
+local function TSYYS_fake_script() -- Universal.Toggle_7.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_7)
 
 	local TweenService = game:GetService("TweenService")
@@ -3933,8 +3933,8 @@ local function XFAHRZ_fake_script() -- Universal.Toggle_7.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(XFAHRZ_fake_script)()
-local function MUEOP_fake_script() -- Universal.Toggle_9.ToggleManager 
+coroutine.wrap(TSYYS_fake_script)()
+local function PYVS_fake_script() -- Universal.Toggle_9.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_9)
 
 	-- // Vars
@@ -3993,8 +3993,8 @@ local function MUEOP_fake_script() -- Universal.Toggle_9.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(MUEOP_fake_script)()
-local function UFHUAEY_fake_script() -- Universal.Toggle_9.esp 
+coroutine.wrap(PYVS_fake_script)()
+local function KSKBF_fake_script() -- Universal.Toggle_9.esp 
 	local script = Instance.new('LocalScript', Universal.Toggle_9)
 
 	local PLAYER = game.Players.LocalPlayer
@@ -4248,18 +4248,21 @@ local function UFHUAEY_fake_script() -- Universal.Toggle_9.esp
 	-- Made By Mick Gordon
 	ui.InputBegan:Connect(function(input,gameProcessed)
 		if gameProcessed then return end
-		local key = script.Parent.key.Value
-		if input.KeyCode == Enum.KeyCode[key] then
-			if cantoggle == true then
-				cantoggle = false
-				toggle = true
-				wait(1)
-			else
-				cantoggle = true
-				toggle = false
-				wait(1)
+		local key = script.Parent:FindFirstChild("key")
+		if key then
+			if input.KeyCode == Enum.KeyCode[key.Value] then
+				if cantoggle == true then
+					cantoggle = false
+					toggle = true
+					wait(1)
+				else
+					cantoggle = true
+					toggle = false
+					wait(1)
 	
+				end
 			end
+	
 		end
 		
 	
@@ -4368,8 +4371,8 @@ local function UFHUAEY_fake_script() -- Universal.Toggle_9.esp
 		end
 	end)
 end
-coroutine.wrap(UFHUAEY_fake_script)()
-local function VHOCJQU_fake_script() -- Universal.Toggle_9.LocalScript 
+coroutine.wrap(KSKBF_fake_script)()
+local function GPUQSZX_fake_script() -- Universal.Toggle_9.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_9)
 
 	local TweenService = game:GetService("TweenService")
@@ -4417,8 +4420,8 @@ local function VHOCJQU_fake_script() -- Universal.Toggle_9.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(VHOCJQU_fake_script)()
-local function OBUAK_fake_script() -- Universal.Toggle_10.ToggleManager 
+coroutine.wrap(GPUQSZX_fake_script)()
+local function BFGX_fake_script() -- Universal.Toggle_10.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_10)
 
 	-- // Vars
@@ -4477,8 +4480,8 @@ local function OBUAK_fake_script() -- Universal.Toggle_10.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(OBUAK_fake_script)()
-local function DWURB_fake_script() -- Universal.Toggle_10.LocalScript 
+coroutine.wrap(BFGX_fake_script)()
+local function BOIQM_fake_script() -- Universal.Toggle_10.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_10)
 
 	local TweenService = game:GetService("TweenService")
@@ -4526,8 +4529,8 @@ local function DWURB_fake_script() -- Universal.Toggle_10.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(DWURB_fake_script)()
-local function CIRZBG_fake_script() -- Universal.Toggle_11.ToggleManager 
+coroutine.wrap(BOIQM_fake_script)()
+local function RWHAV_fake_script() -- Universal.Toggle_11.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_11)
 
 	-- // Vars
@@ -4586,8 +4589,8 @@ local function CIRZBG_fake_script() -- Universal.Toggle_11.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(CIRZBG_fake_script)()
-local function BWQYKX_fake_script() -- Universal.Toggle_11.LocalScript 
+coroutine.wrap(RWHAV_fake_script)()
+local function LLGFJI_fake_script() -- Universal.Toggle_11.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_11)
 
 	local TweenService = game:GetService("TweenService")
@@ -4635,8 +4638,8 @@ local function BWQYKX_fake_script() -- Universal.Toggle_11.LocalScript
 		-- Add other actions you want to perform when the button is clicked here
 	end)
 end
-coroutine.wrap(BWQYKX_fake_script)()
-local function BAUBY_fake_script() -- Universal.TextLabel_2.LocalScript 
+coroutine.wrap(LLGFJI_fake_script)()
+local function GJUK_fake_script() -- Universal.TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextLabel_2)
 
 	while true do
@@ -4644,8 +4647,8 @@ local function BAUBY_fake_script() -- Universal.TextLabel_2.LocalScript
 		script.Parent.Text = game.Players.LocalPlayer.Name
 	end
 end
-coroutine.wrap(BAUBY_fake_script)()
-local function CMON_fake_script() -- Universal.TextButton.LocalScript 
+coroutine.wrap(GJUK_fake_script)()
+local function STPN_fake_script() -- Universal.TextButton.LocalScript 
 	local script = Instance.new('LocalScript', Universal.TextButton)
 
 	local button = script.Parent -- Assuming this is a TextButton
@@ -4664,7 +4667,10 @@ local function CMON_fake_script() -- Universal.TextButton.LocalScript
 				keybind = input.KeyCode -- Store the key that was pressed
 				button.Text = "Keybind Set: " .. input.KeyCode.Name
 				keybindLabel.Text = input.KeyCode.Name
-				script.Parent.Parent.Parent.Parent.Parent.Parent.aaa.Frame.Toggle.Frame.Switch.Toggle.key.Value = input.KeyCode.Name
+				local keey = script.Parent.Parent.Parent.Parent.Parent.Parent.aaa.Frame.Toggle.Frame.Switch.Toggle:FindFirstChild("key") 
+				if keey then
+					keey.Value = input.KeyCode.Name
+				end
 				-- Disconnect after key is set
 				inputConnection:Disconnect()
 			end
@@ -4674,16 +4680,9 @@ local function CMON_fake_script() -- Universal.TextButton.LocalScript
 	-- Connect the button to set the keybind
 	button.MouseButton1Click:Connect(setKeybind)
 	
-	-- Example: Checking the keybind in action
-	UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == keybind then
-			print("Keybind pressed!")
-		end
-	end)
-	
 end
-coroutine.wrap(CMON_fake_script)()
-local function VABUO_fake_script() -- Universal.Toggle_13.ToggleManager 
+coroutine.wrap(STPN_fake_script)()
+local function NAQK_fake_script() -- Universal.Toggle_13.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_13)
 
 	-- // Vars
@@ -4742,8 +4741,8 @@ local function VABUO_fake_script() -- Universal.Toggle_13.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(VABUO_fake_script)()
-local function RANAN_fake_script() -- Universal.Toggle_13.LocalScript 
+coroutine.wrap(NAQK_fake_script)()
+local function UIJHVAT_fake_script() -- Universal.Toggle_13.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_13)
 
 	-- Infinite Jump Script
@@ -4781,8 +4780,8 @@ local function RANAN_fake_script() -- Universal.Toggle_13.LocalScript
 	-- Toggle enabled state for spinning and bhopping
 	
 end
-coroutine.wrap(RANAN_fake_script)()
-local function CJPN_fake_script() -- Universal.Toggle_14.ToggleManager 
+coroutine.wrap(UIJHVAT_fake_script)()
+local function FTWSQJQ_fake_script() -- Universal.Toggle_14.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_14)
 
 	-- // Vars
@@ -4841,8 +4840,8 @@ local function CJPN_fake_script() -- Universal.Toggle_14.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(CJPN_fake_script)()
-local function FQXYCKZ_fake_script() -- Universal.Toggle_14.LocalScript 
+coroutine.wrap(FTWSQJQ_fake_script)()
+local function XXNNZ_fake_script() -- Universal.Toggle_14.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_14)
 
 	local TweenService = game:GetService("TweenService")
@@ -4953,8 +4952,8 @@ local function FQXYCKZ_fake_script() -- Universal.Toggle_14.LocalScript
 	end)
 	
 end
-coroutine.wrap(FQXYCKZ_fake_script)()
-local function QFZOC_fake_script() -- Universal.Toggle_15.ToggleManager 
+coroutine.wrap(XXNNZ_fake_script)()
+local function WWUNFWH_fake_script() -- Universal.Toggle_15.ToggleManager 
 	local script = Instance.new('LocalScript', Universal.Toggle_15)
 
 	-- // Vars
@@ -5013,8 +5012,8 @@ local function QFZOC_fake_script() -- Universal.Toggle_15.ToggleManager
 	button.MouseButton1Click:Connect(toggleButton)
 	frame.MouseButton1Click:Connect(toggleButton)
 end
-coroutine.wrap(QFZOC_fake_script)()
-local function IPWMY_fake_script() -- Universal.Toggle_15.LocalScript 
+coroutine.wrap(WWUNFWH_fake_script)()
+local function VDOUU_fake_script() -- Universal.Toggle_15.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Toggle_15)
 
 	-- LocalScript inside StarterPlayerScripts
@@ -5049,8 +5048,8 @@ local function IPWMY_fake_script() -- Universal.Toggle_15.LocalScript
 	
 	
 end
-coroutine.wrap(IPWMY_fake_script)()
-local function BYGXV_fake_script() -- Universal.Time.LocalScript 
+coroutine.wrap(VDOUU_fake_script)()
+local function WCOIBAP_fake_script() -- Universal.Time.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Time)
 
 	while true do
@@ -5065,8 +5064,8 @@ local function BYGXV_fake_script() -- Universal.Time.LocalScript
 		task.wait(1)
 	end
 end
-coroutine.wrap(BYGXV_fake_script)()
-local function BMVSE_fake_script() -- Universal.Frame_26.LocalScript 
+coroutine.wrap(WCOIBAP_fake_script)()
+local function HSVWRE_fake_script() -- Universal.Frame_26.LocalScript 
 	local script = Instance.new('LocalScript', Universal.Frame_26)
 
 	local Options = script.Parent
@@ -5096,4 +5095,4 @@ local function BMVSE_fake_script() -- Universal.Frame_26.LocalScript
 	
 	
 end
-coroutine.wrap(BMVSE_fake_script)()
+coroutine.wrap(HSVWRE_fake_script)()
