@@ -57,7 +57,7 @@ local DeleteMob ={
 		}
 	}-- Made By Mick Gordon
 }
-local UILib = require(game.ReplicatedStorage.ModuleScript)
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua'))()
 local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
