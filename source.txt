@@ -777,7 +777,111 @@ Section6:Toggle({
 	canjumpeee = value
 end)
 -- Toggle enabled state for spinning and bhopping
+local TweenService = game:GetService("TweenService")
+local Button = script.Parent
+local canClicke = true
+local player = game.Players.LocalPlayer
+local runService = game:GetService("RunService")
+local random = Random.new()
 
+local bhopSpeedMultiplier = 4 -- Multiplier for speed boost while bhopping
+local maxSpeedMultiplier = 16 -- Maximum allowed speed multiplier
+local bhopCooldown = 0.01 -- Time between jumps to avoid jumping every frame
+local lastJumpTime = 0 -- Keeps track of the last time a jump occurred
+
+-- Function to update character references after player respawns
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local oldwalkspeed = humanoid.WalkSpeed
+local currentSpeedMultiplier = bhopSpeedMultiplier
+
+-- Update character references when the player respawns
+player.CharacterAdded:Connect(function(newCharacter)
+	character = newCharacter
+	humanoid = character:WaitForChild("Humanoid")
+	humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	oldwalkspeed = humanoid.WalkSpeed
+end)
+
+-- Function to check if the player is moving
+local function isPlayerMoving()
+	local velocity = humanoidRootPart.Velocity
+	return Vector3.new(velocity.X, 0, velocity.Z).Magnitude > 1
+end
+
+-- Function for auto-bhop
+local function autoBhop(deltaTime)
+	if isPlayerMoving() and humanoid:GetState() == Enum.HumanoidStateType.Running then
+		-- Make the character jump if the cooldown period has passed
+		if tick() - lastJumpTime >= bhopCooldown then
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			lastJumpTime = tick()
+		end
+
+		-- Calculate new velocity for bhop movement
+		local moveDirection = humanoid.MoveDirection
+		local currentVelocity = humanoidRootPart.Velocity
+
+		-- Smoothly increase speed while capping it at maxSpeedMultiplier
+		humanoid.WalkSpeed = math.min(humanoid.WalkSpeed + currentSpeedMultiplier, maxSpeedMultiplier)
+
+		-- Apply a smooth velocity boost with slight randomness
+		humanoidRootPart.Velocity = Vector3.new(
+			(moveDirection.X) * humanoid.WalkSpeed * currentSpeedMultiplier,
+			currentVelocity.Y, -- Preserve the Y velocity (for jumping)
+			(moveDirection.Z) * humanoid.WalkSpeed * currentSpeedMultiplier
+		)
+	else
+		-- Reset the speed multiplier when not bhopping
+		humanoid.WalkSpeed = oldwalkspeed
+		currentSpeedMultiplier = bhopSpeedMultiplier
+	end
+end
+
+-- Button press animation
+
+-- Function to randomly spin the character based on speed
+local num = 0
+ -- Set your desired angle here
+local supertollgg = false
+local function setAngle()
+	local desiredAngle = math.rad(num)
+	if humanoidRootPart then
+		-- Set the humanoidRootPart's CFrame to a fixed angle
+	
+			humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.Position) * CFrame.Angles(0, desiredAngle, 0)
+	
+		
+	end
+end
+
+-- Update every frame if enabled and the player is alive
+runService.RenderStepped:Connect(function()
+	if humanoid.Health > 0 and supertollgg == true then
+		setAngle() -- Set the angle
+		--autoBhop()  -- Call autoBhop function if necessary
+	end
+end)
+Section6:Toggle({
+	Title = "Anti AIM",
+	ButtonName = "Enable",
+	Description = "Anti aim.",
+	supertollgg
+}, function(value)
+
+	supertollgg = value
+end)
+Section6:Slider({
+	Title = "Anti Aim (YAW)",
+	Description = "Anti aim.",
+	Default = 0,  -- Set a sensible default value for wall bang threshold
+	Min = 0,
+	Max = 360
+}, function(value)
+
+	num = value  -- Update the threshold variable to the new value
+end)
 for i,plr in pairs(game.Players:GetChildren()) do
 	AddHighlight(plr)
 	AddBox(plr)
