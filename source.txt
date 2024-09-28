@@ -57,7 +57,7 @@ local DeleteMob ={
 		}
 	}-- Made By Mick Gordon
 }
-local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/StepBroFurious/Script/main/HydraHubUi.lua'))()
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua'))()
 local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
@@ -470,7 +470,15 @@ Section4:Toggle({
 
 	DeleteMob.Aimbot.Enabled = value
 end)
+Section4:Toggle({
+	Title = "Team Check",
+	ButtonName = "Enable",
+	Description = "Check team.",
+	DeleteMob.Aimbot.TeamCheck
+}, function(value)
 
+	DeleteMob.Aimbot.TeamCheck = value
+end)
 Section4:Toggle({
 	Title = "Wall Check",
 	ButtonName = "Enable",
@@ -619,27 +627,12 @@ local togglee = false
 local function togglePrint()
 	togglee = not togglee -- Toggle between true and false
 
-	if togglee then
-		for _, i in pairs(PLAYER.PlayerGui:GetDescendants()) do
-			if i.Name == "Window" then
-				if i:IsA("Frame") then
-					i.Parent.Enabled = true
-				end
-			end
-		end
-		
-
-	else
-		for _, i in pairs(PLAYER.PlayerGui:GetDescendants()) do
-			if i.Name == "Window" then
-				if i:IsA("Frame") then
-					i.Parent.Enabled = false
-				end
-			end
-		end
-		
+	local ui = game.Players.LocalPlayer.PlayerGui:FindFirstChild("b18a391f-7564-4318-bc06-7f8962db7786")
+	if ui then
+		ui.Enabled = togglee -- Set the UI visibility based on the toggle state
 	end
 end
+
 Section2:Keybind({
 	Title = "Menu Keybind",
 	Description = "Toggle UI.",
