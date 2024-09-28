@@ -68,6 +68,7 @@ local Section1 = SubButton1:Section("Player-Chams", "Left")
 local Section3 = SubButton1:Section("Player-Box", "Left")
 local Section2 = SubButton2:Section("Ui-Settings", "Left")
 local Section5 = SubButton2:Section("Player-WallBang", "Left")
+local Section6 = SubButton2:Section("Player-Movement", "Left")
 local Section4 = SubButton3:Section("Player-Aimbot", "Left")
 local PLAYER = game.Players.LocalPlayer
 local Higlight = Instance.new("ScreenGui",game.Workspace)
@@ -734,6 +735,48 @@ game:GetService("RunService").Heartbeat:Connect(function()
 	end
 	
 end)
+-- Infinite Jump Script
+local UserInputService = game:GetService("UserInputService")
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local canjumpeee= false
+local isJumping = false
+local enabled = false
+-- Function to perform jump
+local function performJump()
+	while isJumping do
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.15) -- Adjust this to control the jump rate
+	end
+end
+
+-- Detect when spacebar is pressed and released
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.Space and not gameProcessed then
+		if canjumpeee == true then
+			isJumping = true
+			performJump()
+		end
+
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.Space then
+		isJumping = false
+	end
+end)
+Section6:Toggle({
+	Title = "Inf Jump",
+	ButtonName = "Enable",
+	Description = "Always jump.",
+	canjumpeee
+}, function(value)
+
+	canjumpeee = value
+end)
+-- Toggle enabled state for spinning and bhopping
 
 for i,plr in pairs(game.Players:GetChildren()) do
 	AddHighlight(plr)
