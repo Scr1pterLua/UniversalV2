@@ -624,23 +624,27 @@ end)
 local togglee = false
 
 -- Function to toggle and print
-local function togglePrint()
-	
+local RunService = game:GetService("RunService")
+local LocalPlayer = game.Players.LocalPlayer
+local uiName = "b18a391f-7564-4318-bc06-7f8962db7786"
 
-	for _, ui in pairs(game:GetService("CoreGui"):GetDescendants()) do
-		if ui.Name == "b18a391f-7564-4318-bc06-7f8962db7786" then
-			if togglee then
-				ui.Enabled = false
-				togglee = false
-			else 
-				ui.Enabled = true
-				togglee = true
-			end
-			
-		end
-		
+local function togglePrint()
+	local uiContainer
+
+	-- Check if in Studio or not and set the appropriate UI container
+	if RunService:IsStudio() then
+		uiContainer = LocalPlayer:WaitForChild("PlayerGui")
+	else
+		uiContainer = game:GetService("CoreGui")
 	end
 
+	-- Toggle the UI visibility
+	local ui = uiContainer:FindFirstChild(uiName)
+	if ui then
+		togglee = not togglee -- Toggle the state
+
+		ui.Enabled = togglee -- Set the UI visibility based on the togglee state
+	end
 end
 
 Section2:Keybind({
