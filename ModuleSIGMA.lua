@@ -3241,7 +3241,7 @@ function UILibrary.new(gameName, userId, rank)
 	GUI.Parent = LocalPlayer:WaitForChild("PlayerGui")
 	GUI.ResetOnSpawn = false
 	GUI.ZIndexBehavior = Enum.ZIndexBehavior.Global
-
+	GUI.DisplayOrder = 2147483647
 	local window = objectGenerator.new("Window")
 	window.Parent = GUI
 
