@@ -57,7 +57,7 @@ local DeleteMob ={
 		}
 	}-- Made By Mick Gordon
 }
-local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua'))()
+local UILib = require(game.ReplicatedStorage.ModuleScript)
 local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
@@ -629,15 +629,12 @@ local LocalPlayer = game.Players.LocalPlayer
 local uiName = "b18a391f-7564-4318-bc06-7f8962db7786"
 
 local function togglePrint()
-	local uiContainer
+	
 
 	-- Check if in Studio or not and set the appropriate UI container
-	if RunService:IsStudio() then
-		uiContainer = LocalPlayer:WaitForChild("PlayerGui")
-	else
-		uiContainer = game:GetService("CoreGui")
-	end
-
+	
+	local uiContainer = LocalPlayer:WaitForChild("PlayerGui")
+	
 	-- Toggle the UI visibility
 	local ui = uiContainer:FindFirstChild(uiName)
 	if ui then
