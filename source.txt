@@ -57,7 +57,7 @@ local DeleteMob ={
 		}
 	}-- Made By Mick Gordon
 }
-local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua'))()
+local UILib = require(game.ReplicatedStorage.ModuleScript)
 local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
@@ -625,11 +625,18 @@ local togglee = false
 
 -- Function to toggle and print
 local function togglePrint()
-	togglee = not togglee -- Toggle between true and false
+	
 
-	for _, ui in pairs(PLAYER.PlayerGui:GetDescendants()) do
+	for _, ui in pairs(game:GetService("CoreGui"):GetDescendants()) do
 		if ui.Name == "b18a391f-7564-4318-bc06-7f8962db7786" then
-			ui.Enabled = togglee -- Set the UI visibility based on the toggle state
+			if togglee then
+				ui.Enabled = false
+				togglee = false
+			else 
+				ui.Enabled = true
+				togglee = true
+			end
+			
 		end
 		
 	end
