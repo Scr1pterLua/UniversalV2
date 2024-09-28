@@ -67,7 +67,7 @@ local SubButton2 = Category1:Button("Misc", "http://www.roblox.com/asset/?id=854
 local Section1 = SubButton1:Section("Player-Chams", "Left")
 local Section3 = SubButton1:Section("Player-Box", "Left")
 local Section2 = SubButton2:Section("Ui-Settings", "Left")
-
+local Section5 = SubButton2:Section("Player-WallBang", "Left")
 local Section4 = SubButton3:Section("Player-Aimbot", "Left")
 local PLAYER = game.Players.LocalPlayer
 local Higlight = Instance.new("ScreenGui",game.Workspace)
@@ -282,7 +282,7 @@ function iisVisible(p, ...)
 	return #CurrentCam:GetPartsObscuringTarget({ p }, { CurrentCam, PLAYER.Character, ... }) == 0 
 end-- Made By Mick Gordon
 function AddHighlight(plr)
-	print(DeleteMob.ESP.OutLines.Enabled)
+
 	local Highlight = Instance.new("Highlight")
 	Highlight.Parent = Higlight
 	Highlight.Name = plr.Name
@@ -460,139 +460,157 @@ game:GetService('RunService').RenderStepped:connect(function()
 
 	end
 end)
+-- Aimbot Settings
 Section4:Toggle({
-	Title = "EnableAimbot",
+	Title = "Aimbot",
 	ButtonName = "Enable",
-	Description = "Enables aimbot.",
+	Description = "Toggle aimbot.",
 	DeleteMob.Aimbot.Enabled
 }, function(value)
-	print(value)
+
 	DeleteMob.Aimbot.Enabled = value
 end)
+
 Section4:Toggle({
-	Title = "WallCheck",
+	Title = "Wall Check",
 	ButtonName = "Enable",
-	Description = "Enables wallcheck.",
+	Description = "Check walls.",
 	DeleteMob.Aimbot.WallCheck
 }, function(value)
-	print(value)
+	
 	DeleteMob.Aimbot.WallCheck = value
 end)
+
 Section4:Toggle({
-	Title = "ShowFov",
+	Title = "Show FOV",
 	ButtonName = "Enable",
-	Description = "Lets you see fov.",
+	Description = "Display FOV.",
 	DeleteMob.Aimbot.ShowFov
 }, function(value)
-	print(value)
+	
 	DeleteMob.Aimbot.ShowFov = value
 end)
+
 Section4:Slider({
-	Title = "AimbotFov",
-	Description = "Makes fov bigger.",
+	Title = "FOV Size",
+	Description = "Adjust FOV.",
 	Default = 100,
 	Min = 0,
 	Max = 1000
 }, function(value)
-print(value)
-DeleteMob.Aimbot.Fov = value
+	
+	DeleteMob.Aimbot.Fov = value
 end)
+
 Section4:Slider({
 	Title = "Smoothing",
-	Description = "Less snapy",
+	Description = "Adjust aim smoothness.",
 	Default = 0,
 	Min = 0,
 	Max = 10
 }, function(value)
-	print(value)
+	
 	DeleteMob.Aimbot.Smoothing = value
 end)
+
 Section4:Keybind({
-	Title = "AimbotKeyBind",
+	Title = "Aimbot Keybind",
 	ButtonName = "Enable",
-	Description = "Enables aimbot on key.",
+	Description = "Keybind for aimbot.",
 	Default = aimbotkey
 }, function(value)
 	toggle = not toggle
-print(toggle)
+
 end)
+
+-- ESP Settings
 Section3:Toggle({
-	Title = "EnableBox",
+	Title = "ESP Box",
 	ButtonName = "Enable",
-	Description = "Enables esp.",
+	Description = "Toggle ESP box.",
 	DeleteMob.ESP.Box.Box
 }, function(value)
-	print(value)
+
 	DeleteMob.ESP.Box.Box = value
 end)
+
 Section3:Toggle({
-	Title = "EnableHealth",
+	Title = "Health Display",
 	ButtonName = "Enable",
-	Description = "Enables health.",
+	Description = "Show health.",
 	DeleteMob.ESP.Box.Health
 }, function(value)
-	print(value)
+	
 	DeleteMob.ESP.Box.Health = value
 end)
+
 Section3:Toggle({
-	Title = "TeamCheck",
+	Title = "Team Check",
 	ButtonName = "Enable",
-	Description = "Enables teamcheck.",
+	Description = "Check team.",
 	DeleteMob.ESP.Box.TeamCheck
 }, function(value)
-	print(value)
+
 	DeleteMob.ESP.Box.TeamCheck = value
 end)
+
+-- Chams Settings
 Section1:Toggle({
-	Title = "EnableChams",
+	Title = "Chams",
 	ButtonName = "Enable",
-	Description = "Enables chams.",
+	Description = "Toggle chams.",
 	DeleteMob.ESP.OutLines.Enabled
 }, function(value)
-	print(value)
+	
 	DeleteMob.ESP.OutLines.Enabled = value
 end)
+
 Section1:Toggle({
-	Title = "FancyChams",
+	Title = "Fancy Chams",
 	ButtonName = "Enable",
-	Description = "Changes chams color's by visibility.",
+	Description = "Color by visibility.",
 	DeleteMob.ESP.OutLines.FancyChams
 }, function(value)
-	print(value)
+	
 	DeleteMob.ESP.OutLines.FancyChams = value
 end)
+
 Section1:Toggle({
-	Title = "AlwaysOnTop",
+	Title = "Always Visible",
 	ButtonName = "Enable",
-	Description = "Changes chams visibility.",
+	Description = "Chams always on top.",
 	DeleteMob.ESP.OutLines.AllwaysShow
 }, function(value)
-	print(value)
+
 	DeleteMob.ESP.OutLines.AllwaysShow = value
 end)
+
+-- Color Settings
 Section3:ColorPicker({
-	Title = "EspColor",
+	Title = "ESP Color",
 	Description = "",
 	Default = DeleteMob.ESP.Box.BoxColor,
 }, function(value)
-	print(value)
+	
 	DeleteMob.ESP.Box.BoxColor = value
 end)
+
 Section1:Toggle({
-	Title = "TeamCheck",
+	Title = "Team Check",
 	ButtonName = "Enable",
-	Description = "Enables teamcheck.",
+	Description = "Check team.",
 	DeleteMob.ESP.OutLines.TeamCheck
 }, function(value)
-	print(value)
+	
 	DeleteMob.ESP.OutLines.TeamCheck = value
 end)
+
 Section1:ColorPicker({
 	Title = "ChamColor",
 	Description = "",
 	Default = DeleteMob.ESP.OutLines.FillCollor,
 }, function(value)
-	print(value)
+
 	DeleteMob.ESP.OutLines.FillCollor = value
 end)
 local togglee = false
@@ -602,22 +620,117 @@ local function togglePrint()
 	togglee = not togglee -- Toggle between true and false
 
 	if togglee then
-		PLAYER.PlayerGui["5790e53c-7b90-4555-b57a-a0892475910e"].Enabled = true
+		for _, i in pairs(PLAYER.PlayerGui:GetDescendants()) do
+			if i.Name == "Window" then
+				if i:IsA("Frame") then
+					i.Parent.Enabled = true
+				end
+			end
+		end
 		
 
 	else
-		PLAYER.PlayerGui["5790e53c-7b90-4555-b57a-a0892475910e"].Enabled = false
+		for _, i in pairs(PLAYER.PlayerGui:GetDescendants()) do
+			if i.Name == "Window" then
+				if i:IsA("Frame") then
+					i.Parent.Enabled = false
+				end
+			end
+		end
 		
 	end
 end
 Section2:Keybind({
-	Title = "MenuKeyBind",
-	Description = "Opens ui and closes",
+	Title = "Menu Keybind",
+	Description = "Toggle UI.",
 	Default = keybind,
 }, function(value)
 	togglePrint()
+end)
+
+local threshold = 0 -- Set the initial threshold
+local highlightedParts = {} -- Table to keep track of highlighted parts
+local standcolor = Color3.new(1,0,0)
+local function isPartOfPlayer(part)
+	local model = part:FindFirstAncestorOfClass("Model")
+	return model and model:FindFirstChildOfClass("Humanoid") ~= nil
+end
+
+local function isValidPart(part)
+	return part:IsA("BasePart") and not part:IsA("Terrain")
+end
+
+local function highlightPartsUnderWidth(limit)
+	-- Remove existing highlights first
+	for part, highlight in pairs(highlightedParts) do
+		if highlight then
+			highlight:Destroy() -- Remove the highlight from the part
+			highlightedParts[part] = nil -- Remove the entry from the table
+		end
+	end
+
+	-- Loop through all the parts in the workspace
+	for _, object in ipairs(workspace:GetDescendants()) do
+		if isValidPart(object) and not isPartOfPlayer(object) then
+			local width = object.Size.X
+			if width <= limit and not highlightedParts[object] then
+				-- Create a Highlight instance to highlight the part
+				local highlight = Instance.new("Highlight")
+				highlight.Adornee = object
+				highlight.FillColor = standcolor -- Yellow fill color
+				highlight.OutlineColor = Color3.new(0, 0, 0) -- Red outline color
+				highlight.Parent = object
+				
+
+				highlightedParts[object] = highlight -- Track the highlighted part
+			
+			end
+		end
+	end
+end
+local ontogglefun = false
+Section5:Toggle({
+	Title = "Wall Bang",
+	ButtonName = "Enable",
+	Description = "Toggle wallbang.",
+	ontogglefun
+}, function(value)
+
+	ontogglefun = value
+end)
+Section5:Slider({
+	Title = "Wall Bang Threshold",
+	Description = "Set wall bang value.",
+	Default = 0,  -- Set a sensible default value for wall bang threshold
+	Min = 0,
+	Max = 20
+}, function(value)
+	
+	threshold = value  -- Update the threshold variable to the new value
+end)
+Section5:ColorPicker({
+	Title = "Part Color",
+	Description = "",
+	Default = standcolor,
+}, function(value)
+
+	standcolor = value
+end)
+-- Function to set the threshold and refresh highlights
+game:GetService("RunService").Heartbeat:Connect(function()
+	if ontogglefun then
+		highlightPartsUnderWidth(threshold)
+	else
+		for part, highlight in pairs(highlightedParts) do
+			if highlight then
+				highlight:Destroy() -- Remove the highlight from the part
+				highlightedParts[part] = nil -- Remove the entry from the table
+			end
+		end
+	end
 	
 end)
+
 for i,plr in pairs(game.Players:GetChildren()) do
 	AddHighlight(plr)
 	AddBox(plr)
