@@ -627,10 +627,13 @@ local togglee = false
 local function togglePrint()
 	togglee = not togglee -- Toggle between true and false
 
-	local ui = game.Players.LocalPlayer.PlayerGui:FindFirstChild("b18a391f-7564-4318-bc06-7f8962db7786")
-	if ui then
-		ui.Enabled = togglee -- Set the UI visibility based on the toggle state
+	for _, ui in pairs(PLAYER.PlayerGui:GetDescendants()) do
+		if ui.Name == "b18a391f-7564-4318-bc06-7f8962db7786" then
+			ui.Enabled = togglee -- Set the UI visibility based on the toggle state
+		end
+		
 	end
+
 end
 
 Section2:Keybind({
