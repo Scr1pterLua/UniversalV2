@@ -3238,8 +3238,7 @@ end
 function UILibrary.new(gameName, userId, rank)
 	local GUI = Instance.new("ScreenGui")
 	GUI.Name = "b18a391f-7564-4318-bc06-7f8962db7786"
-	GUI.Parent =
-		RunService:IsStudio() == false and game:GetService("CoreGui") or LocalPlayer:WaitForChild("PlayerGui")
+	GUI.Parent = LocalPlayer:WaitForChild("PlayerGui")
 	GUI.ResetOnSpawn = false
 	GUI.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
