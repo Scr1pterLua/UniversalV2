@@ -57,7 +57,18 @@ local DeleteMob ={
 		}
 	}-- Made By Mick Gordon
 }
-local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua'))()
+local UILib
+local success, err = pcall(function()
+	UILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/refs/heads/main/ModuleSIGMA.lua"))();
+end)
+
+if not success then
+	warn("Error with loadstring: ", err)
+	-- If loadstring fails, fallback to require
+	UILib = require(game.ReplicatedStorage.ModuleScript)
+end
+
+
 local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
@@ -652,7 +663,7 @@ Section2:Keybind({
 }, function(value)
 	togglePrint()
 end)
-
+local ontop = false
 local threshold = 0 -- Set the initial threshold
 local highlightedParts = {} -- Table to keep track of highlighted parts
 local standcolor = Color3.new(1,0,0)
@@ -667,12 +678,7 @@ end
 
 local function highlightPartsUnderWidth(limit)
 	-- Remove existing highlights first
-	for part, highlight in pairs(highlightedParts) do
-		if highlight then
-			highlight:Destroy() -- Remove the highlight from the part
-			highlightedParts[part] = nil -- Remove the entry from the table
-		end
-	end
+	
 
 	-- Loop through all the parts in the workspace
 	for _, object in ipairs(workspace:GetDescendants()) do
@@ -680,12 +686,23 @@ local function highlightPartsUnderWidth(limit)
 			local width = object.Size.X
 			if width <= limit and not highlightedParts[object] then
 				-- Create a Highlight instance to highlight the part
+				for _, highlight in pairs(object:GetDescendants()) do
+					if highlight.Name == "joshwasye" then
+						break
+					end
+				end
 				local highlight = Instance.new("Highlight")
 				highlight.Adornee = object
 				highlight.FillColor = standcolor -- Yellow fill color
 				highlight.OutlineColor = Color3.new(0, 0, 0) -- Red outline color
 				highlight.Parent = object
-				
+				highlight.Name = "joshwasye"
+				if ontop == true then
+					highlight.DepthMode = "AlwaysOnTop" 
+				else
+					highlight.DepthMode = "Occluded" 
+				end-- Made By Mick Gordon
+
 
 				highlightedParts[object] = highlight -- Track the highlighted part
 			
@@ -703,6 +720,16 @@ Section5:Toggle({
 
 	ontogglefun = value
 end)
+Section5:Toggle({
+	Title = "Always Visible",
+	ButtonName = "Enable",
+	Description = "Walls always on top.",
+	ontop
+}, function(value)
+
+	ontop = value
+end)
+
 Section5:Slider({
 	Title = "Wall Bang Threshold",
 	Description = "Set wall bang value.",
@@ -713,6 +740,7 @@ Section5:Slider({
 	
 	threshold = value  -- Update the threshold variable to the new value
 end)
+
 Section5:ColorPicker({
 	Title = "Part Color",
 	Description = "",
@@ -785,7 +813,7 @@ local runService = game:GetService("RunService")
 local random = Random.new()
 
 local bhopSpeedMultiplier = 4 -- Multiplier for speed boost while bhopping
-local maxSpeedMultiplier = 16 -- Maximum allowed speed multiplier
+local maxSpeedMultiplier = 100 -- Maximum allowed speed multiplier
 local bhopCooldown = 0.01 -- Time between jumps to avoid jumping every frame
 local lastJumpTime = 0 -- Keeps track of the last time a jump occurred
 
@@ -849,8 +877,26 @@ local function setAngle()
 	local desiredAngle = math.rad(num)
 	if humanoidRootPart then
 		-- Set the humanoidRootPart's CFrame to a fixed angle
-	
+		if num > 0 then
+			local camera = workspace.CurrentCamera
+			camera.CFrame = camera.CFrame * CFrame.new(0, 0, -0.5)
 			humanoidRootPart.CFrame = CFrame.new(humanoidRootPart.Position) * CFrame.Angles(0, desiredAngle, 0)
+		else
+			local camera = workspace.CurrentCamera
+			local lookVector = camera.CFrame.LookVector
+			local horizontalLookVector = Vector3.new(lookVector.X, 0, lookVector.Z).Unit
+			local oppositeLookVector = -horizontalLookVector
+
+			if character.PrimaryPart then
+
+				camera.CFrame = camera.CFrame * CFrame.new(0, 0, -0.5)
+
+
+				local newCFrame = CFrame.new(character.PrimaryPart.Position) * CFrame.Angles(0, math.atan2(oppositeLookVector.X, oppositeLookVector.Z) + math.pi, 0)
+				character:SetPrimaryPartCFrame(newCFrame)
+			end
+		end
+			
 	
 		
 	end
@@ -860,8 +906,34 @@ end
 runService.RenderStepped:Connect(function()
 	if humanoid.Health > 0 and supertollgg == true then
 		setAngle() -- Set the angle
-		--autoBhop()  -- Call autoBhop function if necessary
+		
 	end
+end)
+local autobhopt = false
+runService.RenderStepped:Connect(function()
+	if humanoid.Health > 0 and autobhopt == true then
+		
+		autoBhop()  -- Call autoBhop function if necessary
+	end
+end)
+Section6:Toggle({
+	Title = "Bhop",
+	ButtonName = "Enable",
+	Description = "Bhop.",
+	autobhopt
+}, function(value)
+
+	autobhopt = value
+end)
+Section6:Slider({
+	Title = "BhopSpeed",
+	Description = "Enable.",
+	Default = 0,  -- Set a sensible default value for wall bang threshold
+	Min = 0,
+	Max = 10
+}, function(value)
+
+	bhopSpeedMultiplier = value  -- Update the threshold variable to the new value
 end)
 Section6:Toggle({
 	Title = "Anti AIM",
