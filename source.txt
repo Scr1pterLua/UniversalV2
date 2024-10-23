@@ -79,9 +79,11 @@ local SubButton2 = Category1:Button("Misc", "http://www.roblox.com/asset/?id=854
 local Section1 = SubButton1:Section("Player-Chams", "Left")
 local Section3 = SubButton1:Section("Player-Box", "Left")
 local Section2 = SubButton2:Section("Ui-Settings", "Left")
-local Section5 = SubButton2:Section("Player-WallBang", "Left")
+
 local Section6 = SubButton4:Section("Player-Movement", "Left")
+local Section8 = SubButton4:Section("Player-AntiAim", "Left")
 local Section4 = SubButton3:Section("Player-Aimbot", "Left")
+local Section7 = SubButton3:Section("Player-Aimbot-Settings", "Left")
 local PLAYER = game.Players.LocalPlayer
 local Higlight = Instance.new("ScreenGui",game.Workspace)
 local CurrentCam  = game.Workspace.CurrentCamera
@@ -512,7 +514,7 @@ Section4:Toggle({
 	DeleteMob.Aimbot.ShowFov = value
 end)
 
-Section4:Slider({
+Section7:Slider({
 	Title = "FOV Size",
 	Description = "Adjust FOV.",
 	Default = 100,
@@ -523,7 +525,7 @@ Section4:Slider({
 	DeleteMob.Aimbot.Fov = value
 end)
 
-Section4:Slider({
+Section7:Slider({
 	Title = "Smoothing",
 	Description = "Adjust aim smoothness.",
 	Default = 0,
@@ -534,14 +536,16 @@ Section4:Slider({
 	DeleteMob.Aimbot.Smoothing = value
 end)
 
-Section4:Keybind({
+Section7:Keybind({
 	Title = "Aimbot Keybind",
 	ButtonName = "Enable",
 	Description = "Keybind for aimbot.",
 	Default = aimbotkey
-}, function(value)
+}, function(value, value2)
+	
+	
 	toggle = not toggle
-
+   
 end)
 
 -- ESP Settings
@@ -586,15 +590,7 @@ Section1:Toggle({
 	DeleteMob.ESP.OutLines.Enabled = value
 end)
 
-Section1:Toggle({
-	Title = "Fancy Chams",
-	ButtonName = "Enable",
-	Description = "Color by visibility.",
-	DeleteMob.ESP.OutLines.FancyChams
-}, function(value)
-	
-	DeleteMob.ESP.OutLines.FancyChams = value
-end)
+
 
 Section1:Toggle({
 	Title = "Always Visible",
@@ -711,59 +707,9 @@ local function highlightPartsUnderWidth(limit)
 		end
 	end
 end
-local ontogglefun = false
-Section5:Toggle({
-	Title = "Wall Bang",
-	ButtonName = "Enable",
-	Description = "Toggle wallbang.",
-	ontogglefun
-}, function(value)
 
-	ontogglefun = value
-end)
-Section5:Toggle({
-	Title = "Always Visible",
-	ButtonName = "Enable",
-	Description = "Walls always on top.",
-	ontop
-}, function(value)
-
-	ontop = value
-end)
-
-Section5:Slider({
-	Title = "Wall Bang Threshold",
-	Description = "Set wall bang value.",
-	Default = 0,  -- Set a sensible default value for wall bang threshold
-	Min = 0,
-	Max = 20
-}, function(value)
-	
-	threshold = value  -- Update the threshold variable to the new value
-end)
-
-Section5:ColorPicker({
-	Title = "Part Color",
-	Description = "",
-	Default = standcolor,
-}, function(value)
-
-	standcolor = value
-end)
 -- Function to set the threshold and refresh highlights
-game:GetService("RunService").Heartbeat:Connect(function()
-	if ontogglefun then
-		highlightPartsUnderWidth(threshold)
-	else
-		for part, highlight in pairs(highlightedParts) do
-			if highlight then
-				highlight:Destroy() -- Remove the highlight from the part
-				highlightedParts[part] = nil -- Remove the entry from the table
-			end
-		end
-	end
-	
-end)
+
 -- Infinite Jump Script
 local UserInputService = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
@@ -813,7 +759,7 @@ local player = game.Players.LocalPlayer
 local runService = game:GetService("RunService")
 local random = Random.new()
 
-local bhopSpeedMultiplier = 4 -- Multiplier for speed boost while bhopping
+local bhopSpeedMultiplier = 0 -- Multiplier for speed boost while bhopping
 local maxSpeedMultiplier = 100 -- Maximum allowed speed multiplier
 local bhopCooldown = 0.01 -- Time between jumps to avoid jumping every frame
 local lastJumpTime = 0 -- Keeps track of the last time a jump occurred
@@ -920,41 +866,41 @@ end)
 Section6:Toggle({
 	Title = "Bhop",
 	ButtonName = "Enable",
-	Description = "Bhop.",
+	Description = "Toggle Bhop",
 	autobhopt
 }, function(value)
-
 	autobhopt = value
 end)
+
 Section6:Slider({
 	Title = "BhopSpeed",
-	Description = "Enable.",
-	Default = 0,  -- Set a sensible default value for wall bang threshold
+	Description = "Set Bhop Speed",
+	Default = 0,
 	Min = 0,
 	Max = 10
 }, function(value)
-
-	bhopSpeedMultiplier = value  -- Update the threshold variable to the new value
+	bhopSpeedMultiplier = value
 end)
-Section6:Toggle({
+
+Section8:Toggle({
 	Title = "Anti AIM",
 	ButtonName = "Enable",
-	Description = "Anti aim.",
+	Description = "Toggle Anti Aim",
 	supertollgg
 }, function(value)
-
 	supertollgg = value
 end)
-Section6:Slider({
+
+Section8:Slider({
 	Title = "Anti Aim (YAW)",
-	Description = "Anti aim.",
-	Default = 0,  -- Set a sensible default value for wall bang threshold
+	Description = "Set YAW angle",
+	Default = 0,
 	Min = 0,
 	Max = 360
 }, function(value)
-
-	num = value  -- Update the threshold variable to the new value
+	num = value
 end)
+
 for i,plr in pairs(game.Players:GetChildren()) do
 	AddHighlight(plr)
 	AddBox(plr)
