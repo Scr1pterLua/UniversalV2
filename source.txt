@@ -1,7 +1,7 @@
 local DeleteMob ={
 	Aimbot= {
 		Enabled = false;
-		TeamCheck = false;-- Made By Mick Gordon
+		TeamCheck = false;-- Made by _universal.
 		WallCheck = false;
 
 		ShowFov = false;
@@ -10,13 +10,13 @@ local DeleteMob ={
 		Smoothing = 0;
 
 		AimPart = "Head";
-		-- Made By Mick Gordon
+		-- Made by _universal.
 		Keybind = "MouseButton2";
 
 
 		Thickness = 1;
 
-		FovFillColor = Color3.fromRGB(100,0,100);
+		FovFillColor = Color3.fromRGB(85,0,255);
 		FovColor = Color3.fromRGB(100,0,100);
 
 		FovFillTransparency = 1;
@@ -24,7 +24,7 @@ local DeleteMob ={
 	};
 	ESP ={
 		Box = {
-			Box = false;-- Made By Mick Gordon
+			Box = false;-- Made by _universal.
 			Name = false;
 			Distance = false;
 			Health = false;
@@ -55,7 +55,7 @@ local DeleteMob ={
 
 			Color = Color3.fromRGB(75,0,10);
 		}
-	}-- Made By Mick Gordon
+	}-- Made by _universal.
 }
 local UILib
 local success, err = pcall(function()
@@ -69,7 +69,7 @@ if not success then
 end
 
 
-local Window = UILib.new("Hydra", game.Players.LocalPlayer.Name, "Beta")
+local Window = UILib.new(".U.", game.Players.LocalPlayer.DisplayName, "V2")
 local Category1 = Window:Category("Main", "http://www.roblox.com/asset/?id=8395621517")
 local SubButton3 = Category1:Button("Aimbot", "http://www.roblox.com/asset/?id=8547236654")
 local SubButton1 = Category1:Button("Visules", "http://www.roblox.com/asset/?id=8547254518")
@@ -92,18 +92,18 @@ local TweenService = game:GetService("TweenService")
 local Fov = Instance.new("ScreenGui")Fov.Name = "Fov" Fov.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") Fov.ZIndexBehavior = Enum.ZIndexBehavior.Sibling Fov.ResetOnSpawn = false-- i miss you synapse fov
 local TracersG = Instance.new("ScreenGui")TracersG.Name = "Tracers" TracersG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") TracersG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling TracersG.ResetOnSpawn = false
 local FOVFFrame = Instance.new("Frame")FOVFFrame.Parent = Fov FOVFFrame.Name = "FOVFFrame" FOVFFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255) FOVFFrame.BorderColor3 = Color3.fromRGB(0, 0, 0) FOVFFrame.BorderSizePixel = 0 FOVFFrame.BackgroundTransparency = 1 FOVFFrame.AnchorPoint = Vector2.new(0.5, 0.5) FOVFFrame.Position = UDim2.new(0.5, 0,0.5, 0) FOVFFrame.Size = UDim2.new(0, DeleteMob.Aimbot.Fov, 0, DeleteMob.Aimbot.Fov) FOVFFrame.BackgroundTransparency = 1 
-local UICorner = Instance.new("UICorner")UICorner.CornerRadius = UDim.new(1, 0) UICorner.Parent = FOVFFrame -- Made By Mick Gordon
+local UICorner = Instance.new("UICorner")UICorner.CornerRadius = UDim.new(1, 0) UICorner.Parent = FOVFFrame -- Made by _universal.
 local UIStroke = Instance.new("UIStroke")UIStroke.Color = Color3.fromRGB(100,0,100) UIStroke.Parent = FOVFFrame UIStroke.Thickness = 1 UIStroke.ApplyStrokeMode = "Border" 
 local BoxC = Instance.new("ScreenGui", game.Workspace) BoxC.Name = "Box"
 local Higlight = Instance.new("ScreenGui",game.Workspace)
-local UIS = game:GetService("UserInputService")-- Made By Mick Gordon
+local UIS = game:GetService("UserInputService")-- Made by _universal.
 local WorldToViewportPoint = CurrentCam.WorldToViewportPoint
 local mouseLocation = UIS.GetMouseLocation
 local connections = {}
-local keybind = Enum.KeyCode.Home
+local keybind = nil
 --player ~= PLAYER and
 local toggle = false
-local aimbotkey = Enum.KeyCode.Z
+local aimbotkey = nil
 local function AddBox(player)
 	local bbg = Instance.new("BillboardGui", BoxC)
 	bbg.Name = player.Name
@@ -123,7 +123,7 @@ local function AddBox(player)
 	right.Parent = outlines
 	right.Size = UDim2.new(0,-(1),1,0)   
 	right.Position = UDim2.new(1,0,0,0)
-	local up = left:Clone()-- Made By Mick Gordon
+	local up = left:Clone()-- Made by _universal.
 	up.Parent = outlines
 	up.Size = UDim2.new(1,0,0,(1))
 	local down = left:Clone()
@@ -149,7 +149,7 @@ local function AddBox(player)
 	namelabel.Font = Enum.Font.Ubuntu
 	local distancel = Instance.new("TextLabel", info)
 	distancel.Name = "distancelabel"
-	distancel.BackgroundTransparency = 1-- Made By Mick Gordon
+	distancel.BackgroundTransparency = 1-- Made by _universal.
 	distancel.TextStrokeTransparency = 0
 	distancel.TextXAlignment = Enum.TextXAlignment.Left
 	distancel.Size = UDim2.new(0,100,0,18)
@@ -191,7 +191,7 @@ local function AddBox(player)
 	bar.Position = UDim2.new(0,0,1,0)
 	bar.Size = UDim2.new(1,0,1,0)
 
-	-- Made By Mick Gordon
+	-- Made by _universal.
 	local co = coroutine.create(function()
 		while wait(0.1) do
 			if player ~= PLAYER and  player and player.Character and player.Character.FindFirstChild(player.Character, "Humanoid") and player.Character.Humanoid.Health > 0 then
@@ -215,7 +215,7 @@ local function AddBox(player)
 					if DeleteMob.ESP.Box.HealthType == "Text" then
 						healthbar.Visible = false
 						healthl.Visible = true
-					end-- Made By Mick Gordon
+					end-- Made by _universal.
 					if DeleteMob.ESP.Box.HealthType == "Bar" then
 						healthl.Visible = false
 						healthbar.Visible = true
@@ -236,7 +236,7 @@ local function AddBox(player)
 					namelabel.Visible = false
 				end
 
-				-- Made By Mick Gordon
+				-- Made by _universal.
 				if DeleteMob.ESP.Box.Distance == true then
 					distancel.Visible = true
 					if PLAYER.Character and PLAYER.Character:FindFirstChild("HumanoidRootPart") ~= nil then
@@ -256,7 +256,7 @@ local function AddBox(player)
 					info.Enabled = true
 					forhealth.Enabled = true
 				end
-				-- Made By Mick Gordon
+				-- Made by _universal.
 
 				if DeleteMob.ESP.Box.TeamColor == true then
 					left.BackgroundColor3 = player.TeamColor.Color
@@ -278,7 +278,7 @@ local function AddBox(player)
 				if not (game:GetService"Players":FindFirstChild(player.Name)) then
 					BoxC:FindFirstChild(player.Name):Destroy()
 					coroutine.yield()
-				end-- Made By Mick Gordon
+				end-- Made by _universal.
 			else
 				bbg.Enabled = false
 				bbg.Adornee = nil
@@ -295,7 +295,7 @@ function iisVisible(p, ...)
 
 
 	return #CurrentCam:GetPartsObscuringTarget({ p }, { CurrentCam, PLAYER.Character, ... }) == 0 
-end-- Made By Mick Gordon
+end-- Made by _universal.
 function AddHighlight(plr)
 
 	local Highlight = Instance.new("Highlight")
@@ -319,7 +319,7 @@ function AddHighlight(plr)
 					else
 						Highlight.Enabled = true
 					end
-				else-- Made By Mick Gordon
+				else-- Made by _universal.
 					Highlight.Enabled = false
 				end
 				
@@ -329,7 +329,7 @@ function AddHighlight(plr)
 					Highlight.DepthMode = "AlwaysOnTop" 
 				else
 					Highlight.DepthMode = "Occluded" 
-				end-- Made By Mick Gordon
+				end-- Made by _universal.
 
 				Highlight.OutlineTransparency = DeleteMob.ESP.OutLines.OutlineTrancparency
 				if DeleteMob.ESP.OutLines.FancyChams then
@@ -365,7 +365,7 @@ function aisVisible(p, ...)
 	end
 
 	return #CurrentCam:GetPartsObscuringTarget({ p }, { CurrentCam, PLAYER.Character, ... }) == 0 
-end-- Made By Mick Gordon
+end-- Made by _universal.
 
 function CameraGetClosestToMouse(Fov)
 	local AimFov = Fov
@@ -380,9 +380,9 @@ function CameraGetClosestToMouse(Fov)
 					local new_magnitude = (screen_pos_2D - mouseLocation(UIS)).Magnitude
 					if on_screen and new_magnitude < AimFov and aisVisible(v.Character[DeleteMob.Aimbot.AimPart].Position, v.Character.Head.Parent) then
 						AimFov = new_magnitude
-						targetPos = v-- Made By Mick Gordon
+						targetPos = v-- Made by _universal.
 					end
-				end-- Made By Mick Gordon
+				end-- Made by _universal.
 			else
 				if v.Character and v.Character:FindFirstChild(DeleteMob.Aimbot.AimPart) and v.Character.Humanoid and v.Character.Humanoid.Health > 0 then
 					local screen_pos, on_screen = WorldToViewportPoint(CurrentCam, v.Character[DeleteMob.Aimbot.AimPart].Position)
@@ -400,23 +400,44 @@ function CameraGetClosestToMouse(Fov)
 end
 
 
-local function aimAt(pos, smooth)
-	local AimPart = pos.Character:FindFirstChild(DeleteMob.Aimbot.AimPart)
-	if AimPart then
-		local LookAt = nil
-		local Distance = math.floor(0.5+(PLAYER.Character:FindFirstChild"HumanoidRootPart".Position - pos.Character:FindFirstChild"HumanoidRootPart".Position).magnitude)
-		if Distance > 100  then
-			local distChangeBig = Distance / 10
-			LookAt = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0,0,-smooth * distChangeBig)):Lerp(AimPart.Position,.01) -- No one esle do camera smoothing ? tf
-		else-- Made By Mick Gordon
-			local distChangeSmall = Distance / 10
-			LookAt = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0,0,-smooth * distChangeSmall)):Lerp(AimPart.Position,.01) -- No one esle do camera smoothing ? tf
-		end
-		CurrentCam.CFrame = CFrame.lookAt(CurrentCam.CFrame.Position, LookAt)
-	end
+local function aimAt(target, smoothness)
+    -- Validate target and required components
+    if not target or not target.Character then
+        return
+    end
+
+    local aimPart = target.Character:FindFirstChild(DeleteMob.Aimbot.AimPart)
+    if not aimPart then
+        return
+    end
+
+    -- Get player and target positions
+    local playerRoot = PLAYER.Character:FindFirstChild("HumanoidRootPart")
+    local targetRoot = target.Character:FindFirstChild("HumanoidRootPart")
+
+    if not playerRoot or not targetRoot then
+        return
+    end
+
+    -- Calculate distance between player and target
+    local distance = (playerRoot.Position - targetRoot.Position).Magnitude
+
+    -- Adjust smoothing based on distance
+    local smoothingFactor = smoothness * (distance / 10)
+
+    -- Calculate the target position for the camera to look at
+    local lookAtPosition
+    if distance > 100 then
+        lookAtPosition = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0, 0, -smoothingFactor)):Lerp(aimPart.Position, 0.01)
+    else
+        lookAtPosition = CurrentCam.CFrame:PointToWorldSpace(Vector3.new(0, 0, -smoothingFactor)):Lerp(aimPart.Position, 0.01)
+    end
+
+    -- Update the camera's CFrame to look at the target position
+    CurrentCam.CFrame = CFrame.lookAt(CurrentCam.CFrame.Position, lookAtPosition)
 end
 local ui = game:GetService("UserInputService")
--- Made By Mick Gordon
+-- Made by _universal.
 
 game:GetService('RunService').RenderStepped:connect(function()
 
@@ -434,15 +455,18 @@ game:GetService('RunService').RenderStepped:connect(function()
 
 	local acc = DeleteMob.Aimbot.Smoothing / 2	
 	local posd = UIS:GetMouseLocation() 
-	FOVFFrame.Position = UDim2.new(0, posd.X, 0, posd.Y - 36)
-	FOVFFrame.Size = UDim2.new(0, DeleteMob.Aimbot.Fov + acc, 0, DeleteMob.Aimbot.Fov + acc)
-	FOVFFrame.Visible = DeleteMob.Aimbot.ShowFov
-	FOVFFrame.BackgroundColor3 = DeleteMob.Aimbot.FovFillColor
+	FOVFFrame.Position = UDim2.new(0, posd.X, 0, posd.Y - 36) 
+	FOVFFrame.Size = UDim2.new(0, DeleteMob.Aimbot.Fov + acc, 0, DeleteMob.Aimbot.Fov + acc) 
+	FOVFFrame.Visible = DeleteMob.Aimbot.ShowFov 
+	FOVFFrame.BackgroundColor3 = DeleteMob.Aimbot.FovFillColor 
 	FOVFFrame.Transparency = DeleteMob.Aimbot.FovFillTransparency
+	
+
 
 	UIStroke.Color = DeleteMob.Aimbot.FovFillColor
 	UIStroke.Transparency = DeleteMob.Aimbot.FovTransparenct
 	UIStroke.Thickness = DeleteMob.Aimbot.Thickness
+	
 
 end)
 
@@ -524,7 +548,14 @@ Section7:Slider({
 	
 	DeleteMob.Aimbot.Fov = value
 end)
+Section7:ColorPicker({
+	Title = "FOV Color",
+	Description = "",
+	Default = DeleteMob.Aimbot.FovFillColor,
+}, function(value)
 
+	DeleteMob.Aimbot.FovFillColor = value
+end)
 Section7:Slider({
 	Title = "Smoothing",
 	Description = "Adjust aim smoothness.",
@@ -549,6 +580,7 @@ Section7:Keybind({
 end)
 
 -- ESP Settings
+
 Section3:Toggle({
 	Title = "ESP Box",
 	ButtonName = "Enable",
@@ -698,7 +730,7 @@ local function highlightPartsUnderWidth(limit)
 					highlight.DepthMode = "AlwaysOnTop" 
 				else
 					highlight.DepthMode = "Occluded" 
-				end-- Made By Mick Gordon
+				end-- Made by _universal.
 
 
 				highlightedParts[object] = highlight -- Track the highlighted part
@@ -863,6 +895,13 @@ runService.RenderStepped:Connect(function()
 		autoBhop()  -- Call autoBhop function if necessary
 	end
 end)
+Window:Notification({
+	Title = "Injected",
+	Desc = "Welcome!",
+	expire = 2
+	
+})
+
 Section6:Toggle({
 	Title = "Bhop",
 	ButtonName = "Enable",
@@ -889,6 +928,13 @@ Section8:Toggle({
 	supertollgg
 }, function(value)
 	supertollgg = value
+	Window:Notification({
+		Title = "Warning",
+		Desc = "Very buggy",
+		expire = 1
+
+	})
+
 end)
 
 Section8:Slider({
