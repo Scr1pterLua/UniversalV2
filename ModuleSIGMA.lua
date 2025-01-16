@@ -1209,7 +1209,7 @@ local function getObjGen()
 			Gui.Watermark.BackgroundTransparency = 1.000
 			Gui.Watermark.Size = UDim2.new(0.5, 0, 0.0199999996, 0)
 			Gui.Watermark.Font = Enum.Font.Gotham
-			Gui.Watermark.Text = "hydrahub v2 | nil | nil"
+			Gui.Watermark.Text = "UniversalHub v2 | nil | nil"
 			Gui.Watermark.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Gui.Watermark.TextSize = 14.000
 			Gui.Watermark.TextStrokeTransparency = 0.800
@@ -1372,7 +1372,7 @@ local function getObjGen()
 			Gui.Logo.LayoutOrder = -5
 			Gui.Logo.Size = UDim2.new(1, 0, 0.100000001, 0)
 			Gui.Logo.ZIndex = 122
-			Gui.Logo.Image = "rbxassetid://8343875413"
+			Gui.Logo.Image = "rbxassetid://18923627200"
 			Gui.Logo.ImageColor3 = Color3.fromRGB(134, 142, 255)
 			Gui.Logo.ScaleType = Enum.ScaleType.Fit
 
@@ -3264,7 +3264,7 @@ function UILibrary.new(gameName, userId, rank)
 	local Drag = Draggable.Drag(window.MainUI, Frame)
 
 	--// Customize the GUI
-	window.Watermark.Text = ("hydrahub v2 | %s | %s"):format(userId, gameName)
+	window.Watermark.Text = ("")
 	local userinfo = window.MainUI.Sidebar.ContentHolder.UserInfo.Content
 	userinfo.Rank.Text = rank
 	userinfo.Title.Text = userId
@@ -4028,8 +4028,8 @@ function UILibrary.Button:Section(name, side)
 	Section.Border.Content.UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(
 	function()
 		Section.Size = UDim2.new(1, 0, 0, Section.Border.Content.UIListLayout.AbsoluteContentSize.Y + 20)
-	end
-	)
+	end)
+	
 
 	return setmetatable(
 		{
@@ -4435,7 +4435,7 @@ local currentKBInfo = {}
 function UILibrary.Section:Keybind(sett, callback)
 	local functions = {}
 	functions.__index = functions
-
+	
 	local cheatBase = generateCheatBase("Keybind", sett)
 	cheatBase.Parent = self.Section.Border.Content
 	cheatBase.LayoutOrder = getLayoutOrder(self.Section.Border.Content)
@@ -4460,10 +4460,12 @@ function UILibrary.Section:Keybind(sett, callback)
 	functions.setValue = function(new)
 		--/// anims
 		element.Text.Text = new.Name
+		
 		updateSize()
 
 		currentKb = new
-
+		
+		
 		if keyPressConn then
 			keyPressConn:Disconnect()
 		end
@@ -4485,7 +4487,7 @@ function UILibrary.Section:Keybind(sett, callback)
 		end
 		)
 	end
-
+    
 	functions.getValue = function()
 		return currentKb
 	end
@@ -4531,7 +4533,7 @@ function UILibrary.Section:Keybind(sett, callback)
 				currentKb = input.UserInputType
 
 				rebinding = false
-
+                
 				functions.setValue(currentKb)
 				conn:Disconnect()
 			end
